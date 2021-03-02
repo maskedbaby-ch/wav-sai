@@ -1,5 +1,0 @@
-ffsystem.pbi: \
-  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo\fatfs\ffsystem.c \
-  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo\fatfs/ff.h \
-  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo\fatfs/integer.h \
-  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo\fatfs/ffconf.h

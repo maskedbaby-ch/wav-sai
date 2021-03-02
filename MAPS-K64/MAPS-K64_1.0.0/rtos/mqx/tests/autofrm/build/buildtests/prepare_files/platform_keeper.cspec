@@ -1,4 +1,0 @@
-element * CHECKEDOUT
-element * /main/LATEST
-load \MSGSW\MQX\src
-load \MSGSW\MQX\install\tools\prepare_resources
