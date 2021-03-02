@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\settings\sai_demo.Debug.general.xcl" --backend -f "C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\settings\sai_demo.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\settings\sai_demo.Debug.general.xcl" --backend -f "C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\settings\sai_demo.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\settings\sai_demo.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\settings\sai_demo.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\settings\sai_demo.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\settings\sai_demo.Debug.driver.xcl" 
 }

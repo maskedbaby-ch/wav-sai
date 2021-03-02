@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <settings>
     <DebugChecksum>
-        <Checksum>1019192477</Checksum>
+        <Checksum>2247592140</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -41,6 +41,13 @@
     <array_types>
         <Fmt0>uint32_t[4096]	2	0</Fmt0>
     </array_types>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Bp0>_ 0 "EMUL_CODE" "0x20009878" 0 0 1 "" 0 "" 0</Bp0>
+        <Count>1</Count>
+    </Breakpoints2>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -50,6 +57,10 @@
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
+    <Aliases>
+        <Count>0</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
     <DriverProfiling>
         <Enabled>0</Enabled>
         <Mode>1</Mode>
@@ -62,15 +73,4 @@
     <CallStackStripe>
         <ShowTiming>1</ShowTiming>
     </CallStackStripe>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints2>
-        <Bp0>_ 0 "EMUL_CODE" "0x20009878" 0 0 1 "" 0 "" 0</Bp0>
-        <Count>1</Count>
-    </Breakpoints2>
-    <Aliases>
-        <Count>0</Count>
-        <SuppressDialog>0</SuppressDialog>
-    </Aliases>
 </settings>

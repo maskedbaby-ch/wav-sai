@@ -1,0 +1,1009 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.2.214/W32 for ARM                  25/Feb/2021  13:50:16
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\sai_demo.out
+#    Map file     =
+#        C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\list\sai_demo.map
+#    Command line =
+#        -f C:\Users\nxf56274\AppData\Local\Temp\1\EWA04A.tmp ("C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\audio.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\diskio.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\equalizer.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\ff.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\ffsystem.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\ffunicode.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\fsl_debug_console.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\fsl_edma_irq.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\fsl_i2c_irq.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\fsl_sai_irq.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\fsl_sd_disk.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\fsl_soundcard.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\fsl_wm8960_driver.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\gpio_pins.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\hardware_init.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\main.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\pin_mux.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\startup.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\startup_MK64F12.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\system_MK64F12.o"
+#        "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj\terminal_menu.o"
+#        --redirect _Printf=_PrintfSmallNoMb --redirect _Scanf=_ScanfSmallNoMb
+#        --no_out_extension -o "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\sai_demo.out"
+#        --map "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\list\sai_demo.map"
+#        --config "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64/../../../../platform/linker/iar/K64F12/K64FN1Mxxx12_flash.icf"
+#        --semihosting "C:\kinetis\MAPS
+#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64/../../../../lib/ksdk_platform_lib/iar/K64F12/debug/ksdk_platform_lib.a"
+#        --entry __iar_program_start "C:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench
+#        8.3\arm\CMSIS\Lib\IAR\iar_cortexM4lf_math.a" --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The advanced heap was selected because the application calls memory
+allocation functions outside of system library functions, and there
+are calls to deallocation functions in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x400 to 0x40f] { section FlashConfig };
+"P2":  place in [from 0x0 to 0x3ff] |
+                [from 0x410 to 0xf'ffff] { ro };
+define block CSTACK with size = 32K, alignment = 8 { };
+define block HEAP with size = 32K, alignment = 8 { };
+"P3":  place in [from 0x1fff'0400 to 0x1fff'ffff] |
+                [from 0x2000'0000 to 0x2002'ffff] {
+          rw, block CSTACK, block HEAP };
+"P4":  place in [from 0x1fff'0400 to 0x1fff'ffff] |
+                [from 0x2000'0000 to 0x2002'ffff] { zi };
+initialize by copy { rw, section .textrw };
+
+No sections matched the following patterns:
+
+  section m_interrupts_ram  in "P5"
+
+
+  Section              Kind         Address      Size  Object
+  -------              ----         -------      ----  ------
+"A0":                                           0x400
+  .intvec              ro code          0x0     0x400  startup_MK64F12.o [1]
+                                    - 0x400     0x400
+
+"P1":                                            0x10
+  FlashConfig          ro code        0x400      0x10  startup_MK64F12.o [1]
+                                    - 0x410      0x10
+
+"P2":                                        0x1'7898
+  .rodata              const          0x410    0x7378  ffunicode.o [1]
+  .rodata              const         0x7788    0x7378  ffunicode.o [1]
+  .text                ro code       0xeb00    0x14dc  dlmalloc.o [2]
+  .text                ro code       0xffdc       0x6  abort.o [2]
+  .text                ro code       0xffe2      0x3a  zero_init3.o [6]
+  .text                ro code     0x1'001c      0x2c  xgetmemchunk.o [2]
+  .text                ro code     0x1'0048       0x6  ABImemclr.o [6]
+  .text                ro code     0x1'004e      0x2e  copy_init3.o [6]
+  .text                ro code     0x1'007c      0x14  exit.o [7]
+  .text                ro code     0x1'0090      0x66  ABImemset.o [6]
+  .text                ro code     0x1'00f6       0x2  startup_MK64F12.o [1]
+  .text                ro code     0x1'00f8    0x11b8  fsl_sdhc_card.o [4]
+  .text                ro code     0x1'12b0      0x24  ABIassert.o [7]
+  .text                ro code     0x1'12d4     0x298  fsl_os_abstraction_bm.o [4]
+  .text                ro code     0x1'156c    0x1148  fsl_sdhc_driver.o [4]
+  .text                ro code     0x1'26b4      0xa6  ABImemcpy.o [6]
+  .text                ro code     0x1'275a       0x2  startup_MK64F12.o [1]
+  .text                ro code     0x1'275c       0x6  ABImemclr4.o [6]
+  .text                ro code     0x1'2762       0x2  startup_MK64F12.o [1]
+  .text                ro code     0x1'2764     0x114  fsl_sim_hal_K64F12.o [4]
+  .text                ro code     0x1'2878      0x2c  fsl_interrupt_manager.o [4]
+  .text                ro code     0x1'28a4       0x4  heaptramp0.o [2]
+  .text                ro code     0x1'28a8      0xb0  fsl_clock_K64F12.o [4]
+  .text                ro code     0x1'2958     0x15c  fsl_sdhc_hal.o [4]
+  .text                ro code     0x1'2ab4     0x188  fsl_clock_manager.o [4]
+  .text                ro code     0x1'2c3c      0x32  ABImemset48.o [6]
+  .text                ro code     0x1'2c6e       0x2  startup_MK64F12.o [1]
+  .text                ro code     0x1'2c70     0x2e0  fsl_sim_hal.o [4]
+  .text                ro code     0x1'2f50     0x2b4  fsl_mcg_hal.o [4]
+  .text                ro code     0x1'3204    0x11a0  ff.o [1]
+  .text                ro code     0x1'43a4     0x194  ffunicode.o [1]
+  .text                ro code     0x1'4538      0x64  diskio.o [1]
+  .text                ro code     0x1'459c      0xf4  fsl_sd_disk.o [1]
+  .text                ro code     0x1'4690     0x614  pin_mux.o [1]
+  .text                ro code     0x1'4ca4     0x501  xprintfsmall_nomb.o [2]
+  .text                ro code     0x1'51a6       0x2  startup_MK64F12.o [1]
+  .text                ro code     0x1'51a8      0x16  strchr.o [6]
+  .text                ro code     0x1'51be       0x2  startup_MK64F12.o [1]
+  .text                ro code     0x1'51c0      0x40  xfail_s.o [2]
+  .text                ro code     0x1'5200      0x36  strlen.o [6]
+  .text                ro code     0x1'5236       0x2  startup_MK64F12.o [1]
+  .text                ro code     0x1'5238      0x58  memchr.o [6]
+  .text                ro code     0x1'5290     0x38c  fsl_gpio_driver.o [4]
+  .text                ro code     0x1'561c      0x88  fsl_gpio_hal.o [4]
+  .text                ro code     0x1'56a4     0x34c  fsl_sai_hal.o [4]
+  .text                ro code     0x1'59f0     0x334  fsl_sai_driver.o [4]
+  .text                ro code     0x1'5d24     0x224  fsl_uart_driver.o [4]
+  .text                ro code     0x1'5f48     0x1f4  fsl_uart_hal.o [4]
+  .rodata              const       0x1'613c     0x1f4  ffunicode.o [1]
+  .text                ro code     0x1'6330     0x1b4  fsl_i2c_master_driver.o [4]
+  .text                ro code     0x1'64e4     0x1a0  main.o [1]
+  .text                ro code     0x1'6684      0x28  printf.o [2]
+  .text                ro code     0x1'66ac      0x8a  hardware_init.o [1]
+  .text                ro code     0x1'6736       0x2  startup_MK64F12.o [1]
+  .text                ro code     0x1'6738     0x14c  fsl_debug_console.o [1]
+  .text                ro code     0x1'6884     0x17c  system_MK64F12.o [1]
+  .text                ro code     0x1'6a00     0x168  fsl_i2c_slave_driver.o [4]
+  .text                ro code     0x1'6b68     0x140  fsl_edma_driver.o [4]
+  .text                ro code     0x1'6ca8      0x18  fsl_edma_hal.o [4]
+  .rodata              const       0x1'6cc0      0xbc  ffunicode.o [1]
+  .text                ro code     0x1'6d7c      0xaa  fsl_edma_irq.o [1]
+  .text                ro code     0x1'6e26       0x2  startup_MK64F12.o [1]
+  .rodata              const       0x1'6e28      0x8c  fsl_uart_driver.o [4]
+  .rodata              const       0x1'6eb4      0x8c  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'6f40      0x8c  fsl_i2c_master_driver.o [4]
+  .rodata              const       0x1'6fcc      0x8c  fsl_gpio_driver.o [4]
+  .rodata              const       0x1'7058      0x7c  fsl_gpio_driver.o [4]
+  .rodata              const       0x1'70d4      0x7c  fsl_gpio_driver.o [4]
+  .rodata              const       0x1'7150      0x78  fsl_sai_driver.o [4]
+  .rodata              const       0x1'71c8      0x78  fsl_i2c_master_driver.o [4]
+  .rodata              const       0x1'7240      0x74  pin_mux.o [1]
+  .text                ro code     0x1'72b4      0x74  startup.o [1]
+  .rodata              const       0x1'7328      0x68  fsl_i2c_master_driver.o [4]
+  .rodata              const       0x1'7390      0x68  fsl_i2c_slave_driver.o [4]
+  .rodata              const       0x1'73f8      0x64  fsl_i2c_shared_function.o [4]
+  .text                ro code     0x1'745c      0x60  fsl_i2c_shared_function.o [4]
+  .rodata              const       0x1'74bc      0x58  fsl_os_abstraction_bm.o [4]
+  .rodata              const       0x1'7514      0x58  fsl_uart_driver.o [4]
+  .rodata              const       0x1'756c      0x58  fsl_sdhc_card.o [4]
+  .rodata              const       0x1'75c4      0x58  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'761c      0x50  fsl_sdhc_hal.o [4]
+  .rodata              const       0x1'766c      0x50  fsl_gpio_hal.o [4]
+  .rodata              const       0x1'76bc      0x4c  fsl_sim_hal.o [4]
+  .text                ro code     0x1'7708      0x44  startup_MK64F12.o [1]
+  .rodata              const       0x1'774c      0x2c  main.o [1]
+  .rodata              const       0x1'7778      0x28  fsl_sdhc_driver.o [4]
+  .text                ro code     0x1'77a0      0x28  data_init.o [6]
+  .text                ro code     0x1'77c8      0x22  fpinit_M.o [5]
+  .iar.init_table      const       0x1'77ec      0x24  - Linker created -
+  .text                ro code     0x1'7810       0x2  startup_MK64F12.o [1]
+  .rodata              const       0x1'7814      0x20  fsl_uart_driver.o [4]
+  .rodata              const       0x1'7834      0x20  fsl_sim_hal.o [4]
+  .rodata              const       0x1'7854      0x20  fsl_sim_hal.o [4]
+  .text                ro code     0x1'7874      0x20  putchar.o [2]
+  .text                ro code     0x1'7894      0x1e  fsl_i2c_irq.o [1]
+  .rodata              const       0x1'78b2       0x1  fsl_sdhc_common.o [4]
+  .text                ro code     0x1'78b4      0x1e  cmain.o [6]
+  .text                ro code     0x1'78d2       0x4  low_level_init.o [2]
+  .text                ro code     0x1'78d6       0x4  exit.o [2]
+  .text                ro code     0x1'78dc       0xa  cexit.o [6]
+  .rodata              const       0x1'78e8      0x1c  main.o [1]
+  .rodata              const       0x1'7904      0x1c  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7920      0x18  gpio_pins.o [1]
+  .rodata              const       0x1'7938      0x18  main.o [1]
+  .rodata              const       0x1'7950      0x18  main.o [1]
+  .rodata              const       0x1'7968      0x18  main.o [1]
+  .rodata              const       0x1'7980      0x18  fsl_uart_common.o [4]
+  .rodata              const       0x1'7998      0x18  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'79b0      0x18  fsl_sdhc_driver.o [4]
+  .text                ro code     0x1'79c8      0x16  xprout.o [2]
+  .rodata              const       0x1'79e0      0x14  main.o [1]
+  .rodata              const       0x1'79f4      0x14  main.o [1]
+  .rodata              const       0x1'7a08      0x14  fsl_uart_driver.o [4]
+  .rodata              const       0x1'7a1c      0x14  fsl_sai_driver.o [4]
+  .rodata              const       0x1'7a30      0x14  fsl_sai_driver.o [4]
+  .rodata              const       0x1'7a44      0x14  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7a58      0x14  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7a6c      0x14  fsl_sim_hal_K64F12.o [4]
+  .rodata              const       0x1'7a80      0x14  fsl_gpio_driver.o [4]
+  .rodata              const       0x1'7a94      0x14  fsl_gpio_common.o [4]
+  .rodata              const       0x1'7aa8      0x14  fsl_gpio_common.o [4]
+  .text                ro code     0x1'7abc      0x14  fsl_sai_irq.o [1]
+  .rodata              const       0x1'7ad0      0x10  ff.o [1]
+  .rodata              const       0x1'7ae0      0x10  fsl_uart_driver.o [4]
+  .rodata              const       0x1'7af0      0x10  fsl_uart_driver.o [4]
+  .rodata              const       0x1'7b00      0x10  fsl_i2c_shared_function.o [4]
+  .rodata              const       0x1'7b10      0x10  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7b20      0x10  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7b30      0x10  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7b40      0x10  fsl_i2c_master_driver.o [4]
+  .rodata              const       0x1'7b50      0x10  fsl_gpio_driver.o [4]
+  .rodata              const       0x1'7b60      0x10  fsl_i2c_slave_driver.o [4]
+  .rodata              const       0x1'7b70       0xc  ff.o [1]
+  .rodata              const       0x1'7b7c       0xc  ff.o [1]
+  .rodata              const       0x1'7b88       0xc  main.o [1]
+  .rodata              const       0x1'7b94       0xc  pin_mux.o [1]
+  .rodata              const       0x1'7ba0       0xc  fsl_sdhc_card.o [4]
+  .rodata              const       0x1'7bac       0xc  fsl_sdhc_card.o [4]
+  .rodata              const       0x1'7bb8       0xc  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7bc4       0xc  fsl_gpio_driver.o [4]
+  .rodata              const       0x1'7bd0       0xc  fsl_gpio_driver.o [4]
+  .rodata              const       0x1'7bdc       0xc  fsl_i2c_common.o [4]
+  .rodata              const       0x1'7be8       0xc  fsl_gpio_hal.o [4]
+  .text                ro code     0x1'7bf4       0xc  cstartup_M.o [6]
+  .rodata              const       0x1'7c00       0x8  ff.o [1]
+  .rodata              const       0x1'7c08       0x8  ff.o [1]
+  .rodata              const       0x1'7c10       0x8  main.o [1]
+  .rodata              const       0x1'7c18       0x8  fsl_os_abstraction_bm.o [4]
+  .rodata              const       0x1'7c20       0x8  fsl_sdhc_card.o [4]
+  .rodata              const       0x1'7c28       0x8  fsl_sdhc_card.o [4]
+  .rodata              const       0x1'7c30       0x8  fsl_sdhc_card.o [4]
+  .rodata              const       0x1'7c38       0x8  fsl_sdhc_card.o [4]
+  .rodata              const       0x1'7c40       0x8  fsl_sdhc_card.o [4]
+  .rodata              const       0x1'7c48       0x8  fsl_sdhc_card.o [4]
+  .rodata              const       0x1'7c50       0x8  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7c58       0x8  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7c60       0x8  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7c68       0x8  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7c70       0x8  fsl_sdhc_driver.o [4]
+  .rodata              const       0x1'7c78       0x8  fsl_sdhc_hal.o [4]
+  .rodata              const       0x1'7c80       0x8  fsl_gpio_common.o [4]
+  .data_init                       0x1'7c88       0x8  <Block>
+    Initializer bytes  const       0x1'7c88       0x8  <for .data-1>
+  .rodata              const       0x1'7c90       0x4  main.o [1]
+  .rodata              const       0x1'7c94       0x4  fsl_sai_common.o [4]
+  .rodata              const       0x1'7c98       0x4  fsl_clock_manager.o [4]
+  .rodata              const       0x1'7c9c       0x4  fsl_clock_manager.o [4]
+  .rodata              const       0x1'7ca0       0x4  fsl_edma_common.o [4]
+  .rodata              const       0x1'7ca4       0x4  fsl_sdhc_common.o [4]
+  .rodata              const       0x1'7ca8       0x0  zero_init3.o [6]
+  .rodata              const       0x1'7ca8       0x0  copy_init3.o [6]
+                                 - 0x1'7ca8  0x1'7898
+
+"P3-P4", part 1 of 3:                             0x8
+  .data                         0x2000'0000       0x8  <Block>
+    .data-1                     0x2000'0000       0x8  <Init block>
+      .data            inited   0x2000'0000       0x8  fsl_uart_common.o [4]
+                              - 0x2000'0008       0x8
+
+"P3-P4", part 2 of 3:                           0x608
+  .bss                          0x2000'0008     0x608  <Block>
+    .bss               zero     0x2000'0008       0xc  ff.o [1]
+    .bss               zero     0x2000'0014      0x48  fsl_debug_console.o [1]
+    .bss               zero     0x2000'005c      0x88  fsl_sd_disk.o [1]
+    .bss               zero     0x2000'00e4      0x4c  fsl_sd_disk.o [1]
+    .bss               zero     0x2000'0130     0x238  main.o [1]
+    .bss               zero     0x2000'0368       0xc  main.o [1]
+    .bss               zero     0x2000'0374       0x4  main.o [1]
+    .bss               zero     0x2000'0378       0x4  fsl_edma_driver.o [4]
+    .bss               zero     0x2000'037c      0x50  fsl_os_abstraction_bm.o [4]
+    .bss               zero     0x2000'03cc       0x4  fsl_os_abstraction_bm.o [4]
+    .bss               zero     0x2000'03d0      0x10  fsl_os_abstraction_bm.o [4]
+    .bss               zero     0x2000'03e0      0x18  fsl_uart_common.o [4]
+    .bss               zero     0x2000'03f8       0xc  fsl_i2c_shared_function.o [4]
+    .bss               zero     0x2000'0404       0x8  fsl_sai_driver.o [4]
+    .bss               zero     0x2000'040c       0x4  fsl_sdhc_driver.o [4]
+    .bss               zero     0x2000'0410       0x4  fsl_interrupt_manager.o [4]
+    .bss               zero     0x2000'0414      0x18  dlmalloc.o [2]
+    .bss               zero     0x2000'042c     0x1d8  dlmalloc.o [2]
+    .bss               zero     0x2000'0604       0x4  xfail_s.o [2]
+    .bss               zero     0x2000'0608       0x4  xgetmemchunk.o [2]
+    .bss               zero     0x2000'060c       0x2  ff.o [1]
+    .bss               zero     0x2000'060e       0x1  ff.o [1]
+                              - 0x2000'0610     0x608
+
+"P3-P4", part 3 of 3:                        0x1'0000
+  CSTACK                        0x2000'0610    0x8000  <Block>
+    CSTACK             uninit   0x2000'0610    0x8000  <Block tail>
+  HEAP                          0x2000'8610    0x8000  <Block>
+    HEAP               uninit   0x2000'8610    0x8000  <Block tail>
+                              - 0x2001'0610  0x1'0000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+     0x1'7ca8     0xf'ffff  0xe'8358
+  0x1fff'0400  0x1fff'ffff    0xfc00
+  0x2001'0610  0x2002'ffff  0x1'f9f0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x607:
+          0x2000'0008  0x607
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x8:
+             0x1'7c88    0x8
+    1 destination range, total size 0x8:
+          0x2000'0000    0x8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                     ro code  ro data  rw data
+    ------                     -------  -------  -------
+command line/config:
+    ----------------------------------------------------
+    Total:
+
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj: [1]
+    diskio.o                       100
+    ff.o                         4'512       56       15
+    ffunicode.o                    404   59'808
+    fsl_debug_console.o            332                72
+    fsl_edma_irq.o                 170
+    fsl_i2c_irq.o                   30
+    fsl_sai_irq.o                   20
+    fsl_sd_disk.o                  244               212
+    gpio_pins.o                              24
+    hardware_init.o                138
+    main.o                         416      208      584
+    pin_mux.o                    1'556      128
+    startup.o                      116
+    startup_MK64F12.o            1'128
+    system_MK64F12.o               380
+    ----------------------------------------------------
+    Total:                       9'546   60'224      883
+
+dl7M_tln.a: [2]
+    abort.o                          6
+    dlmalloc.o                   5'340               496
+    exit.o                           4
+    heaptramp0.o                     4
+    low_level_init.o                 4
+    printf.o                        40
+    putchar.o                       32
+    xfail_s.o                       64                 4
+    xgetmemchunk.o                  44                 4
+    xprintfsmall_nomb.o          1'281
+    xprout.o                        22
+    ----------------------------------------------------
+    Total:                       6'841               504
+
+iar_cortexM4lf_math.a: [3]
+    ----------------------------------------------------
+    Total:
+
+ksdk_platform_lib.a: [4]
+    fsl_clock_K64F12.o             176
+    fsl_clock_manager.o            392        8
+    fsl_edma_common.o                         4
+    fsl_edma_driver.o              320                 4
+    fsl_edma_hal.o                  24
+    fsl_gpio_common.o                        48
+    fsl_gpio_driver.o              908      448
+    fsl_gpio_hal.o                 136       92
+    fsl_i2c_common.o                         12
+    fsl_i2c_master_driver.o        436      380
+    fsl_i2c_shared_function.o       96      116       12
+    fsl_i2c_slave_driver.o         360      120
+    fsl_interrupt_manager.o         44                 4
+    fsl_mcg_hal.o                  692
+    fsl_os_abstraction_bm.o        664       96      100
+    fsl_sai_common.o                          4
+    fsl_sai_driver.o               820      160        8
+    fsl_sai_hal.o                  844
+    fsl_sdhc_card.o              4'536      160
+    fsl_sdhc_common.o                         5
+    fsl_sdhc_driver.o            4'424      484        4
+    fsl_sdhc_hal.o                 348       88
+    fsl_sim_hal.o                  736      140
+    fsl_sim_hal_K64F12.o           276       20
+    fsl_uart_common.o                        32       32
+    fsl_uart_driver.o              548      312
+    fsl_uart_hal.o                 500
+    ----------------------------------------------------
+    Total:                      17'280    2'729      164
+
+m7M_tls.a: [5]
+    fpinit_M.o                      34
+    ----------------------------------------------------
+    Total:                          34
+
+rt7M_tl.a: [6]
+    ABImemclr.o                      6
+    ABImemclr4.o                     6
+    ABImemcpy.o                    166
+    ABImemset.o                    102
+    ABImemset48.o                   50
+    cexit.o                         10
+    cmain.o                         30
+    copy_init3.o                    46
+    cstartup_M.o                    12
+    data_init.o                     40
+    memchr.o                        88
+    strchr.o                        22
+    strlen.o                        54
+    zero_init3.o                    58
+    ----------------------------------------------------
+    Total:                         690
+
+shb_l.a: [7]
+    ABIassert.o                     36
+    exit.o                          20
+    ----------------------------------------------------
+    Total:                          56
+
+    Gaps                             4        8
+    Linker created                           36   65'536
+--------------------------------------------------------
+    Grand Total:                34'451   62'997   67'087
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.bss$$Base              0x2000'0008           --   Gb  - Linker created -
+.bss$$Limit             0x2000'0610           --   Gb  - Linker created -
+.data$$Base             0x2000'0000           --   Gb  - Linker created -
+.data$$Limit            0x2000'0008           --   Gb  - Linker created -
+.data_init$$Base           0x1'7c88           --   Gb  - Linker created -
+.data_init$$Limit          0x1'7c90           --   Gb  - Linker created -
+.iar.init_table$$Base      0x1'77ec           --   Gb  - Linker created -
+.iar.init_table$$Limit     0x1'7810           --   Gb  - Linker created -
+?main                      0x1'78b5          Code  Gb  cmain.o [6]
+CLOCK_HAL_GetClkSrcMode
+                           0x1'2f51     0x8  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetDigitalControlledOscRangeMode
+                           0x1'2f93     0xc  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetDivider       0x1'2e79    0xb8  Code  Gb  fsl_sim_hal.o [4]
+CLOCK_HAL_GetDmx32         0x1'2f87     0xc  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetFastClkInternalRefDivider
+                           0x1'2fbf     0xc  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetFllClk        0x1'3043    0xb4  Code  Gb  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetFllExternalRefDivider
+                           0x1'2f59     0xa  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetFllRefClk     0x1'2fd5    0x6e  Code  Gb  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetInternalRefClk
+                           0x1'3151    0x26  Code  Gb  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetInternalRefClkSelMode
+                           0x1'2f7b     0xc  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetInternalRefSelMode
+                           0x1'2f63     0xc  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetOscselMode
+                           0x1'2fcb     0xa  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetOutClk        0x1'3177    0x72  Code  Gb  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetPll0Clk       0x1'30f7    0x5a  Code  Gb  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetPllExternalRefDivider0
+                           0x1'2f9f     0xa  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetPllSelMode
+                           0x1'2fa9     0xc  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetRange0Mode
+                           0x1'2f6f     0xc  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_GetSource        0x1'2d97    0xe2  Code  Gb  fsl_sim_hal.o [4]
+CLOCK_HAL_GetVoltCtrlOscDivider0
+                           0x1'2fb5     0xa  Code  Lc  fsl_mcg_hal.o [4]
+CLOCK_HAL_SetSource        0x1'2c71   0x126  Code  Gb  fsl_sim_hal.o [4]
+CLOCK_SYS_DisableSdhcClock
+                           0x1'1633    0x12  Code  Lc  fsl_sdhc_driver.o [4]
+CLOCK_SYS_EnableLptimerClock
+                           0x1'12d5    0x12  Code  Lc  fsl_os_abstraction_bm.o [4]
+CLOCK_SYS_EnablePortClock
+                           0x1'66ad     0xe  Code  Lc  hardware_init.o [1]
+CLOCK_SYS_EnablePortClock
+                           0x1'546d    0x10  Code  Lc  fsl_gpio_driver.o [4]
+CLOCK_SYS_EnableSdhcClock
+                           0x1'64e5     0xe  Code  Lc  main.o [1]
+CLOCK_SYS_EnableSdhcClock
+                           0x1'1621    0x12  Code  Lc  fsl_sdhc_driver.o [4]
+CLOCK_SYS_EnableUartClock
+                           0x1'5d89    0x12  Code  Lc  fsl_uart_driver.o [4]
+CLOCK_SYS_GetFreq          0x1'2b0d    0xf6  Code  Gb  fsl_clock_manager.o [4]
+CLOCK_SYS_GetSdhcFreq      0x1'28d9    0x78  Code  Gb  fsl_clock_K64F12.o [4]
+CLOCK_SYS_GetSysClkFreq
+                           0x1'2ab5    0x58  Code  Gb  fsl_clock_manager.o [4]
+CLOCK_SYS_GetUartFreq      0x1'28a9    0x30  Code  Gb  fsl_clock_K64F12.o [4]
+CLOCK_SYS_SetSource        0x1'2c03    0x26  Code  Gb  fsl_clock_manager.o [4]
+CSTACK$$Base            0x2000'0610           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'8610           --   Gb  - Linker created -
+CurrVol                 0x2000'060e     0x1  Data  Lc  ff.o [1]
+DMA0_IRQHandler            0x1'6d7d     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA10_IRQHandler           0x1'6de1     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA11_IRQHandler           0x1'6deb     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA12_IRQHandler           0x1'6df5     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA13_IRQHandler           0x1'6dff     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA14_IRQHandler           0x1'6e09     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA15_IRQHandler           0x1'6e13     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA1_IRQHandler            0x1'6d87     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA2_IRQHandler            0x1'6d91     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA3_IRQHandler            0x1'6d9b     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA4_IRQHandler            0x1'6da5     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA5_IRQHandler            0x1'6daf     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA6_IRQHandler            0x1'6db9     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA7_IRQHandler            0x1'6dc3     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA8_IRQHandler            0x1'6dcd     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA9_IRQHandler            0x1'6dd7     0xa  Code  Gb  fsl_edma_irq.o [1]
+DMA_Error_IRQHandler       0x1'6e1d     0xa  Code  Gb  fsl_edma_irq.o [1]
+DbcTbl                     0x1'7b7c     0xc  Data  Lc  ff.o [1]
+DbgConsole_Init            0x1'67d3    0x62  Code  Gb  fsl_debug_console.o [1]
+EDMA_DRV_ClearIntStatus
+                           0x1'6b8f    0x3a  Code  Lc  fsl_edma_driver.o [4]
+EDMA_DRV_ErrorIRQHandler
+                           0x1'6bff    0x7a  Code  Gb  fsl_edma_driver.o [4]
+EDMA_DRV_IRQHandler        0x1'6bc9    0x36  Code  Gb  fsl_edma_driver.o [4]
+EDMA_DRV_StopChannel       0x1'6c79    0x24  Code  Gb  fsl_edma_driver.o [4]
+EDMA_HAL_ClearDoneStatusFlag
+                           0x1'6b7f     0x8  Code  Lc  fsl_edma_driver.o [4]
+EDMA_HAL_ClearIntStatusFlag
+                           0x1'6b87     0x8  Code  Lc  fsl_edma_driver.o [4]
+EDMA_HAL_GetErrorIntStatusFlag
+                           0x1'6b79     0x6  Code  Lc  fsl_edma_driver.o [4]
+EDMA_HAL_SetDmaRequestCmd
+                           0x1'6ca9    0x18  Code  Gb  fsl_edma_hal.o [4]
+EDMA_HAL_SetHaltCmd        0x1'6b69    0x10  Code  Lc  fsl_edma_driver.o [4]
+FatFs                   0x2000'0008     0xc  Data  Lc  ff.o [1]
+Fsid                    0x2000'060c     0x2  Data  Lc  ff.o [1]
+GPIO_DRV_Init              0x1'54b7    0x34  Code  Gb  fsl_gpio_driver.o [4]
+GPIO_DRV_InputPinInit      0x1'54eb    0x78  Code  Gb  fsl_gpio_driver.o [4]
+GPIO_DRV_OutputPinInit     0x1'5563    0x5a  Code  Gb  fsl_gpio_driver.o [4]
+GPIO_DRV_ReadPinInput      0x1'55bd    0x1c  Code  Gb  fsl_gpio_driver.o [4]
+GPIO_HAL_ReadPinInput      0x1'5447    0x26  Code  Lc  fsl_gpio_driver.o [4]
+GPIO_HAL_SetPinDir         0x1'561d    0x4a  Code  Gb  fsl_gpio_hal.o [4]
+GPIO_HAL_WritePinOutput
+                           0x1'5667    0x34  Code  Gb  fsl_gpio_hal.o [4]
+HEAP$$Base              0x2000'8610           --   Gb  - Linker created -
+HEAP$$Limit             0x2001'0610           --   Gb  - Linker created -
+I2C0_IRQHandler            0x1'7895     0xa  Code  Gb  fsl_i2c_irq.o [1]
+I2C1_IRQHandler            0x1'789f     0xa  Code  Gb  fsl_i2c_irq.o [1]
+I2C2_IRQHandler            0x1'78a9     0xa  Code  Gb  fsl_i2c_irq.o [1]
+I2C_DRV_IRQHandler         0x1'7475    0x36  Code  Gb  fsl_i2c_shared_function.o [4]
+I2C_DRV_MasterIRQHandler
+                           0x1'63d5    0xe6  Code  Gb  fsl_i2c_master_driver.o [4]
+I2C_DRV_SlaveIRQHandler
+                           0x1'6a4b   0x102  Code  Gb  fsl_i2c_slave_driver.o [4]
+I2C_HAL_ClearArbitrationLost
+                           0x1'6a33     0xc  Code  Lc  fsl_i2c_slave_driver.o [4]
+I2C_HAL_ClearInt           0x1'63c7     0xe  Code  Lc  fsl_i2c_master_driver.o [4]
+I2C_HAL_ClearInt           0x1'6a3f     0xc  Code  Lc  fsl_i2c_slave_driver.o [4]
+I2C_HAL_GetDirMode         0x1'6383     0xe  Code  Lc  fsl_i2c_master_driver.o [4]
+I2C_HAL_GetDirMode         0x1'6a0b     0xc  Code  Lc  fsl_i2c_slave_driver.o [4]
+I2C_HAL_GetStatusFlag      0x1'639f     0xe  Code  Lc  fsl_i2c_master_driver.o [4]
+I2C_HAL_GetStatusFlag      0x1'6a25     0xe  Code  Lc  fsl_i2c_slave_driver.o [4]
+I2C_HAL_IsMaster           0x1'745d    0x18  Code  Lc  fsl_i2c_shared_function.o [4]
+I2C_HAL_IsMaster           0x1'63ad    0x1a  Code  Lc  fsl_i2c_master_driver.o [4]
+I2C_HAL_ReadByte           0x1'6391     0x8  Code  Lc  fsl_i2c_master_driver.o [4]
+I2C_HAL_ReadByte           0x1'6a17     0x8  Code  Lc  fsl_i2c_slave_driver.o [4]
+I2C_HAL_SendAck            0x1'6367     0xe  Code  Lc  fsl_i2c_master_driver.o [4]
+I2C_HAL_SendNak            0x1'6375     0xe  Code  Lc  fsl_i2c_master_driver.o [4]
+I2C_HAL_SendStop           0x1'6331    0x36  Code  Lc  fsl_i2c_master_driver.o [4]
+I2C_HAL_SetDirMode         0x1'6a01     0xa  Code  Lc  fsl_i2c_slave_driver.o [4]
+I2C_HAL_WriteByte          0x1'6399     0x6  Code  Lc  fsl_i2c_master_driver.o [4]
+I2C_HAL_WriteByte          0x1'6a1f     0x6  Code  Lc  fsl_i2c_slave_driver.o [4]
+I2S0_Rx_IRQHandler         0x1'7ac7     0xa  Code  Gb  fsl_sai_irq.o [1]
+I2S0_Tx_IRQHandler         0x1'7abd     0xa  Code  Gb  fsl_sai_irq.o [1]
+INT_SYS_DisableIRQ         0x1'15df    0x42  Code  Lc  fsl_sdhc_driver.o [4]
+INT_SYS_DisableIRQGlobal
+                           0x1'2891     0xc  Code  Gb  fsl_interrupt_manager.o [4]
+INT_SYS_EnableIRQ          0x1'5d9b    0x42  Code  Lc  fsl_uart_driver.o [4]
+INT_SYS_EnableIRQ          0x1'159d    0x42  Code  Lc  fsl_sdhc_driver.o [4]
+INT_SYS_EnableIRQ          0x1'547d    0x3a  Code  Lc  fsl_gpio_driver.o [4]
+INT_SYS_EnableIRQGlobal
+                           0x1'2879    0x18  Code  Gb  fsl_interrupt_manager.o [4]
+LPTMR_HAL_Enable           0x1'12e7     0xc  Code  Lc  fsl_os_abstraction_bm.o [4]
+LPTMR_HAL_GetCounterValue
+                           0x1'1357    0x18  Code  Lc  fsl_os_abstraction_bm.o [4]
+LPTMR_HAL_SetFreeRunningCmd
+                           0x1'1303    0x10  Code  Lc  fsl_os_abstraction_bm.o [4]
+LPTMR_HAL_SetIntCmd        0x1'12f3    0x10  Code  Lc  fsl_os_abstraction_bm.o [4]
+LPTMR_HAL_SetPrescalerClockSourceMode
+                           0x1'133f    0x18  Code  Lc  fsl_os_abstraction_bm.o [4]
+LPTMR_HAL_SetPrescalerCmd
+                           0x1'1323    0x1c  Code  Lc  fsl_os_abstraction_bm.o [4]
+LPTMR_HAL_SetTimerModeMode
+                           0x1'1313    0x10  Code  Lc  fsl_os_abstraction_bm.o [4]
+LfnOfs                     0x1'7ad0    0x10  Data  Lc  ff.o [1]
+NVIC_DisableIRQ            0x1'1585    0x18  Code  Lc  fsl_sdhc_driver.o [4]
+NVIC_EnableIRQ             0x1'5d25    0x18  Code  Lc  fsl_uart_driver.o [4]
+NVIC_EnableIRQ             0x1'156d    0x18  Code  Lc  fsl_sdhc_driver.o [4]
+NVIC_EnableIRQ             0x1'5291    0x18  Code  Lc  fsl_gpio_driver.o [4]
+OSA_Init                   0x1'1501    0x40  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_MemAllocZero           0x1'14bd     0xe  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_MemFree                0x1'14cb     0xe  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_SemaCreate             0x1'137f    0x2e  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_SemaDestroy            0x1'146b    0x1e  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_SemaPost               0x1'1435    0x36  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_SemaWait               0x1'13ad    0x88  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_TimeDelay              0x1'14d9    0x1e  Code  Gb  fsl_os_abstraction_bm.o [4]
+OSA_TimeGetMsec            0x1'14f7     0xa  Code  Gb  fsl_os_abstraction_bm.o [4]
+PORT_HAL_SetDigitalFilterCmd
+                           0x1'53d3    0x36  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetDriveStrengthMode
+                           0x1'477f    0x30  Code  Lc  pin_mux.o [1]
+PORT_HAL_SetDriveStrengthMode
+                           0x1'53a1    0x32  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetMuxMode        0x1'47af    0x3a  Code  Lc  pin_mux.o [1]
+PORT_HAL_SetOpenDrainCmd
+                           0x1'474f    0x30  Code  Lc  pin_mux.o [1]
+PORT_HAL_SetOpenDrainCmd
+                           0x1'536f    0x32  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetPassiveFilterCmd
+                           0x1'471f    0x30  Code  Lc  pin_mux.o [1]
+PORT_HAL_SetPassiveFilterCmd
+                           0x1'533d    0x32  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetPinIntMode     0x1'5409    0x3e  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetPullCmd        0x1'46bf    0x30  Code  Lc  pin_mux.o [1]
+PORT_HAL_SetPullCmd        0x1'52d9    0x32  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetPullMode       0x1'4691    0x2e  Code  Lc  pin_mux.o [1]
+PORT_HAL_SetPullMode       0x1'52a9    0x30  Code  Lc  fsl_gpio_driver.o [4]
+PORT_HAL_SetSlewRateMode
+                           0x1'46ef    0x30  Code  Lc  pin_mux.o [1]
+PORT_HAL_SetSlewRateMode
+                           0x1'530b    0x32  Code  Lc  fsl_gpio_driver.o [4]
+Region$$Table$$Base        0x1'77ec           --   Gb  - Linker created -
+Region$$Table$$Limit       0x1'7810           --   Gb  - Linker created -
+SAI_DRV_RxIRQHandler       0x1'5bad   0x162  Code  Gb  fsl_sai_driver.o [4]
+SAI_DRV_TxIRQHandler       0x1'5a43   0x16a  Code  Gb  fsl_sai_driver.o [4]
+SAI_HAL_ReceiveData        0x1'59f1    0x28  Code  Lc  fsl_sai_driver.o [4]
+SAI_HAL_RxClearStateFlag
+                           0x1'5811    0x50  Code  Gb  fsl_sai_hal.o [4]
+SAI_HAL_RxGetIntCmd        0x1'5733    0x8e  Code  Gb  fsl_sai_hal.o [4]
+SAI_HAL_RxGetStateFlag     0x1'58fd    0x9a  Code  Gb  fsl_sai_hal.o [4]
+SAI_HAL_SendData           0x1'5a19    0x2a  Code  Lc  fsl_sai_driver.o [4]
+SAI_HAL_TxClearStateFlag
+                           0x1'57c1    0x50  Code  Gb  fsl_sai_hal.o [4]
+SAI_HAL_TxGetIntCmd        0x1'56a5    0x8e  Code  Gb  fsl_sai_hal.o [4]
+SAI_HAL_TxGetStateFlag     0x1'5861    0x9a  Code  Gb  fsl_sai_hal.o [4]
+SDCARD_DRV_AllSendCid      0x1'041f    0x82  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_AppSendOpCond
+                           0x1'0b67    0xba  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_DecodeCid       0x1'0313    0x7e  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_DecodeCsd       0x1'00f9   0x21a  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_DecodeScr       0x1'074f    0xda  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_GoIdle          0x1'0c21    0x4a  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_Init            0x1'1045    0xc2  Code  Gb  fsl_sdhc_card.o [4]
+SDCARD_DRV_InitSd          0x1'0a75    0xf2  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_Read            0x1'0d81   0x14c  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_ReadBlocks      0x1'11cd    0xbe  Code  Gb  fsl_sdhc_card.o [4]
+SDCARD_DRV_SelectCard      0x1'058f    0x78  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_SendApplicationCmd
+                           0x1'0391    0x8e  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_SendCsd         0x1'0509    0x86  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_SendIfCond      0x1'0c6b    0x6c  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_SendRca         0x1'04a1    0x68  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_SendScr         0x1'0829   0x110  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_SendStatus      0x1'0cd7    0x9e  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_SetBlockSize
+                           0x1'0607    0x62  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_SetBusWidth     0x1'09e7    0x8e  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_Switch          0x1'0669    0xe6  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_SwitchHighspeed
+                           0x1'0939    0xae  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_Write           0x1'0ed9   0x16c  Code  Lc  fsl_sdhc_card.o [4]
+SDCARD_DRV_WriteBlocks     0x1'1107    0xbe  Code  Gb  fsl_sdhc_card.o [4]
+SDHC_DRV_ConfigClock       0x1'1d01    0xe2  Code  Gb  fsl_sdhc_driver.o [4]
+SDHC_DRV_DetectCard        0x1'2491    0x6e  Code  Gb  fsl_sdhc_driver.o [4]
+SDHC_DRV_FillAdma1Table
+                           0x1'18bb   0x168  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_DRV_FillAdma2Table
+                           0x1'1a65   0x11e  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_DRV_GetMaxBlockSize
+                           0x1'1edd    0x48  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_DRV_Init              0x1'2175   0x2bc  Code  Gb  fsl_sdhc_driver.o [4]
+SDHC_DRV_IsCardPresent     0x1'1ccb    0x36  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_DRV_IssueRequestBlocking
+                           0x1'2505   0x17a  Code  Gb  fsl_sdhc_driver.o [4]
+SDHC_DRV_PrepareData       0x1'1b83   0x148  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_DRV_Reset             0x1'1e45    0x98  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_DRV_SelectClock       0x1'186f    0x2c  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_DRV_SendCommand       0x1'1f25   0x1c2  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_DRV_SetAdma2Descriptor
+                           0x1'1a23    0x42  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_DRV_SetBusWidth       0x1'1de3    0x5c  Code  Gb  fsl_sdhc_driver.o [4]
+SDHC_DRV_SetClock          0x1'189b    0x20  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_DRV_Shutdown          0x1'2431    0x5c  Code  Gb  fsl_sdhc_driver.o [4]
+SDHC_HAL_DoesHostSupportAdma
+                           0x1'17db     0xc  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_DoesHostSupportDma
+                           0x1'17f3     0xc  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_DoesHostSupportHighspeed
+                           0x1'17e7     0xc  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_DoesHostSupportSuspendResume
+                           0x1'17ff     0xc  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_DoesHostSupportV180
+                           0x1'181d     0x6  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_DoesHostSupportV300
+                           0x1'1817     0x6  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_DoesHostSupportV330
+                           0x1'180b     0xc  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_GetMaxBlockLength
+                           0x1'17d1     0xa  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_Init              0x1'2989    0x2e  Code  Gb  fsl_sdhc_hal.o [4]
+SDHC_HAL_InitCard          0x1'2a0f    0x42  Code  Gb  fsl_sdhc_hal.o [4]
+SDHC_HAL_IsCardInserted
+                           0x1'16b3     0xc  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_IsCmdInhibit      0x1'168f     0xc  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_IsDataInhibit     0x1'169b     0xc  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_IsSdClockStable
+                           0x1'16a7     0xc  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_Reset             0x1'2a51    0x4c  Code  Gb  fsl_sdhc_hal.o [4]
+SDHC_HAL_SendCmd           0x1'1675    0x1a  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetAdmaAddress
+                           0x1'184d     0x8  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetBlockCount     0x1'165f     0xe  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetBlockSize      0x1'164b    0x14  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetClockDivisor
+                           0x1'179b    0x12  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetClockFrequency
+                           0x1'17ad    0x12  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetCmdArgument
+                           0x1'166d     0x8  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetD3cd           0x1'16dd    0x1a  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetDataTimeout
+                           0x1'17bf    0x12  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetDataTransferWidth
+                           0x1'16bf    0x1e  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetDmaAddress     0x1'1645     0x6  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetDmaMode        0x1'1715    0x1e  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetEndian         0x1'16f7    0x1e  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetExternalDmaRequest
+                           0x1'1855    0x1a  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetExternalDmaRequest
+                           0x1'2971    0x18  Code  Lc  fsl_sdhc_hal.o [4]
+SDHC_HAL_SetIntSignal      0x1'29b7    0x2c  Code  Gb  fsl_sdhc_hal.o [4]
+SDHC_HAL_SetIntState       0x1'29e3    0x2c  Code  Gb  fsl_sdhc_hal.o [4]
+SDHC_HAL_SetIpgClock       0x1'1733    0x1a  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetPeripheralClock
+                           0x1'1767    0x1a  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetReadWatermarkLevel
+                           0x1'1835    0x18  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetSdClock        0x1'1781    0x1a  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetSdClock        0x1'2959    0x18  Code  Lc  fsl_sdhc_hal.o [4]
+SDHC_HAL_SetSysClock       0x1'174d    0x1a  Code  Lc  fsl_sdhc_driver.o [4]
+SDHC_HAL_SetWriteWatermarkLevel
+                           0x1'1823    0x12  Code  Lc  fsl_sdhc_driver.o [4]
+SIM_HAL_DisableSdhcClock
+                           0x1'2849     0xc  Code  Gb  fsl_sim_hal_K64F12.o [4]
+SIM_HAL_EnableLptimerClock
+                           0x1'27bf     0xe  Code  Gb  fsl_sim_hal_K64F12.o [4]
+SIM_HAL_EnablePortClock
+                           0x1'2765    0x5a  Code  Gb  fsl_sim_hal_K64F12.o [4]
+SIM_HAL_EnableSdhcClock
+                           0x1'283d     0xc  Code  Gb  fsl_sim_hal_K64F12.o [4]
+SIM_HAL_EnableUartClock
+                           0x1'27cd    0x60  Code  Gb  fsl_sim_hal_K64F12.o [4]
+SystemInit                 0x1'6885   0x11a  Code  Gb  system_MK64F12.o [1]
+UART_DRV_Init              0x1'5ddd   0x130  Code  Gb  fsl_uart_driver.o [4]
+UART_DRV_ReceivePollBlocking
+                           0x1'679f    0x34  Code  Lc  fsl_debug_console.o [1]
+UART_DRV_SendPollBlocking
+                           0x1'6769    0x36  Code  Lc  fsl_debug_console.o [1]
+UART_HAL_EnableReceiver
+                           0x1'5d4b     0xe  Code  Lc  fsl_uart_driver.o [4]
+UART_HAL_EnableTransmitter
+                           0x1'5d3d     0xe  Code  Lc  fsl_uart_driver.o [4]
+UART_HAL_FlushRxFifo       0x1'60c5    0x22  Code  Gb  fsl_uart_hal.o [4]
+UART_HAL_FlushTxFifo       0x1'60a3    0x22  Code  Gb  fsl_uart_hal.o [4]
+UART_HAL_GetTxFifoSize     0x1'5d7d     0xc  Code  Lc  fsl_uart_driver.o [4]
+UART_HAL_Getchar           0x1'602b     0xc  Code  Gb  fsl_uart_hal.o [4]
+UART_HAL_Init              0x1'5f49    0x7a  Code  Gb  fsl_uart_hal.o [4]
+UART_HAL_IsRxDataRegFull
+                           0x1'6751    0x18  Code  Lc  fsl_debug_console.o [1]
+UART_HAL_IsTxDataRegEmpty
+                           0x1'6739    0x18  Code  Lc  fsl_debug_console.o [1]
+UART_HAL_Putchar           0x1'6021     0xa  Code  Gb  fsl_uart_hal.o [4]
+UART_HAL_SetBaudRate       0x1'5fc3    0x5e  Code  Gb  fsl_uart_hal.o [4]
+UART_HAL_SetBitCountPerChar
+                           0x1'5d59     0xc  Code  Lc  fsl_uart_driver.o [4]
+UART_HAL_SetParityMode     0x1'5d65     0xc  Code  Lc  fsl_uart_driver.o [4]
+UART_HAL_SetRxFifoCmd      0x1'606d    0x36  Code  Gb  fsl_uart_hal.o [4]
+UART_HAL_SetRxFifoWatermark
+                           0x1'6105    0x1e  Code  Gb  fsl_uart_hal.o [4]
+UART_HAL_SetStopBitCount
+                           0x1'5d71     0xc  Code  Lc  fsl_uart_driver.o [4]
+UART_HAL_SetTxFifoCmd      0x1'6037    0x36  Code  Gb  fsl_uart_hal.o [4]
+UART_HAL_SetTxFifoWatermark
+                           0x1'60e7    0x1e  Code  Gb  fsl_uart_hal.o [4]
+_LitobSmallNoMb            0x1'5063    0xce  Code  Lc  xprintfsmall_nomb.o [2]
+_PrintfSmallNoMb           0x1'4ca5   0x3b2  Code  Gb  xprintfsmall_nomb.o [2]
+_Prout                     0x1'79c9    0x16  Code  Gb  xprout.o [2]
+_PutcharSmallNoMb          0x1'5131    0x20  Code  Lc  xprintfsmall_nomb.o [2]
+_PutcharsSmallNoMb         0x1'5151    0x2e  Code  Lc  xprintfsmall_nomb.o [2]
+__VECTOR_RAM {Abs}      0x1fff'0000          Data  Gb  <internal module>
+__VECTOR_TABLE {Abs}            0x0          Data  Gb  <internal module>
+__Vectors                       0x0           --   Gb  startup_MK64F12.o [1]
+__Vectors_End                 0x400          Data  Gb  startup_MK64F12.o [1]
+__Vectors_Size {Abs}          0x400           --   Gb  startup_MK64F12.o [1]
+__aeabi_assert             0x1'12b1    0x24  Code  Gb  ABIassert.o [7]
+__aeabi_memclr             0x1'0049          Code  Gb  ABImemclr.o [6]
+__aeabi_memclr4            0x1'275d          Code  Gb  ABImemclr4.o [6]
+__aeabi_memcpy             0x1'26b5          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy4            0x1'26d5          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy8            0x1'26d5          Code  Gb  ABImemcpy.o [6]
+__aeabi_memset             0x1'0091          Code  Gb  ABImemset.o [6]
+__cmain                    0x1'78b5          Code  Gb  cmain.o [6]
+__data_GetMemChunk         0x1'001d    0x2c  Code  Gb  xgetmemchunk.o [2]
+__data_GetMemChunk::start
+                        0x2000'0608     0x4  Data  Lc  xgetmemchunk.o [2]
+__exit                     0x1'007d    0x14  Code  Gb  exit.o [7]
+__iar_Fail_s               0x1'51c1    0x1c  Code  Gb  xfail_s.o [2]
+__iar_Memchr               0x1'5239          Code  Gb  memchr.o [6]
+__iar_Memset               0x1'0091          Code  Gb  ABImemset.o [6]
+__iar_Memset4_word         0x1'2c3d          Code  Gb  ABImemset48.o [6]
+__iar_Memset8_word         0x1'2c3d          Code  Gb  ABImemset48.o [6]
+__iar_Memset_word          0x1'0099          Code  Gb  ABImemset.o [6]
+__iar_Strchr               0x1'51a9          Code  Gb  strchr.o [6]
+__iar_copy_init3           0x1'004f    0x2e  Code  Gb  copy_init3.o [6]
+__iar_data_init3           0x1'77a1    0x28  Code  Gb  data_init.o [6]
+__iar_dlcalloc               0xff99    0x3e  Code  Gb  dlmalloc.o [2]
+__iar_dlfree                 0xfa77   0x51e  Code  Gb  dlmalloc.o [2]
+__iar_dlmalloc               0xeb89   0xeee  Code  Gb  dlmalloc.o [2]
+__iar_init_vfp             0x1'77c9          Code  Gb  fpinit_M.o [5]
+__iar_program_start        0x1'7bf5          Code  Gb  cstartup_M.o [6]
+__iar_zero_init3             0xffe3    0x3a  Code  Gb  zero_init3.o [6]
+__low_level_init           0x1'78d3     0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0          Data  Gb  startup_MK64F12.o [1]
+__vector_table_0x1c            0x1c          Data  Gb  startup_MK64F12.o [1]
+__write                    0x1'684d    0x38  Code  Wk  fsl_debug_console.o [1]
+_call_main                 0x1'78c1          Code  Gb  cmain.o [6]
+_exit                      0x1'78dd          Code  Gb  cexit.o [6]
+_gm_                    0x2000'042c   0x1d8  Data  Lc  dlmalloc.o [2]
+_main                      0x1'78cf          Code  Gb  cmain.o [6]
+abort                        0xffdd     0x6  Code  Gb  abort.o [2]
+cardInserted            0x2000'0374     0x4  Data  Lc  main.o [1]
+card_insert                0x1'6537    0x74  Code  Lc  main.o [1]
+cd                      0x2000'0368     0xc  Data  Lc  main.o [1]
+check_fs                   0x1'3f05    0x76  Code  Lc  ff.o [1]
+chk_chr                    0x1'3277    0x14  Code  Lc  ff.o [1]
+clst2sect                  0x1'33fd    0x1a  Code  Lc  ff.o [1]
+cmp_lfn                    0x1'3947    0x9e  Code  Lc  ff.o [1]
+configure_can_pins         0x1'47e9    0x1c  Code  Gb  pin_mux.o [1]
+configure_enet_pins        0x1'4805    0x8e  Code  Gb  pin_mux.o [1]
+configure_gpio_pins        0x1'4893   0x15a  Code  Gb  pin_mux.o [1]
+configure_i2c_pins         0x1'49ed    0x6a  Code  Gb  pin_mux.o [1]
+configure_i2s_pins         0x1'4a57    0x3a  Code  Gb  pin_mux.o [1]
+configure_sdhc_pins        0x1'4a91    0xf6  Code  Gb  pin_mux.o [1]
+configure_spi_pins         0x1'4b87    0x94  Code  Gb  pin_mux.o [1]
+configure_uart_pins        0x1'4c1b    0x5a  Code  Gb  pin_mux.o [1]
+create_chain               0x1'360b   0x130  Code  Lc  ff.o [1]
+create_name                0x1'3b21   0x2d6  Code  Lc  ff.o [1]
+dbc_1st                    0x1'328b    0x36  Code  Lc  ff.o [1]
+dbc_2nd                    0x1'32c1    0x4e  Code  Lc  ff.o [1]
+dbg_uart_init              0x1'6711    0x26  Code  Gb  hardware_init.o [1]
+dir_clear                  0x1'373b    0x64  Code  Lc  ff.o [1]
+dir_find                   0x1'3a09   0x118  Code  Lc  ff.o [1]
+dir_next                   0x1'3849    0xd8  Code  Lc  ff.o [1]
+dir_sdi                    0x1'379f    0xaa  Code  Lc  ff.o [1]
+disk_initialize            0x1'4551    0x18  Code  Gb  diskio.o [1]
+disk_read                  0x1'4569    0x1a  Code  Gb  diskio.o [1]
+disk_status                0x1'4539    0x18  Code  Gb  diskio.o [1]
+disk_write                 0x1'4583    0x1a  Code  Gb  diskio.o [1]
+exit                       0x1'78d7     0x4  Code  Gb  exit.o [2]
+f_chdrive                  0x1'42d9    0x18  Code  Gb  ff.o [1]
+f_mount                    0x1'427b    0x56  Code  Gb  ff.o [1]
+f_opendir                  0x1'4311    0x94  Code  Gb  ff.o [1]
+ff_oem2uni                 0x1'440d    0x66  Code  Gb  ffunicode.o [1]
+ff_uni2oem                 0x1'43a5    0x68  Code  Gb  ffunicode.o [1]
+ff_wtoupper                0x1'4473    0xb6  Code  Gb  ffunicode.o [1]
+ff_wtoupper::cvt1          0x1'613c   0x1f4  Data  Lc  ffunicode.o [1]
+ff_wtoupper::cvt2          0x1'6cc0    0xbc  Data  Lc  ffunicode.o [1]
+find_volume                0x1'3f85   0x2f6  Code  Lc  ff.o [1]
+follow_path                0x1'3df7    0xbc  Code  Lc  ff.o [1]
+free                       0x1'28a5     0x4  Code  Gb  heaptramp0.o [2]
+g_edma                  0x2000'0378     0x4  Data  Gb  fsl_edma_driver.o [4]
+g_edmaBaseAddr             0x1'7ca0     0x4  Data  Gb  fsl_edma_common.o [4]
+g_fileSystem            0x2000'0130   0x238  Data  Lc  main.o [1]
+g_freeTaskControlBlock  0x2000'03cc     0x4  Data  Lc  fsl_os_abstraction_bm.o [4]
+g_gpioBaseAddr             0x1'7a94    0x14  Data  Gb  fsl_gpio_common.o [4]
+g_hosts                 0x2000'040c     0x4  Data  Lc  fsl_sdhc_driver.o [4]
+g_i2cBaseAddr              0x1'7bdc     0xc  Data  Gb  fsl_i2c_common.o [4]
+g_i2cStatePtr           0x2000'03f8     0xc  Data  Gb  fsl_i2c_shared_function.o [4]
+g_interruptDisableCount
+                        0x2000'0410     0x4  Data  Gb  fsl_interrupt_manager.o [4]
+g_mcgBaseAddr              0x1'7c9c     0x4  Data  Gb  fsl_clock_manager.o [4]
+g_portBaseAddr             0x1'7aa8    0x14  Data  Gb  fsl_gpio_common.o [4]
+g_portIrqId                0x1'7c80     0x8  Data  Gb  fsl_gpio_common.o [4]
+g_req_resp_flags           0x1'7778    0x28  Data  Lc  fsl_sdhc_driver.o [4]
+g_saiBaseAddr              0x1'7c94     0x4  Data  Gb  fsl_sai_common.o [4]
+g_sdhcBaseAddr             0x1'7ca4     0x4  Data  Gb  fsl_sdhc_common.o [4]
+g_sdhcCard              0x2000'005c    0x88  Data  Lc  fsl_sd_disk.o [1]
+g_sdhcHost              0x2000'00e4    0x4c  Data  Lc  fsl_sd_disk.o [1]
+g_sdhcIrqId                0x1'78b2     0x1  Data  Gb  fsl_sdhc_common.o [4]
+g_simBaseAddr              0x1'7c98     0x4  Data  Gb  fsl_clock_manager.o [4]
+g_taskControlBlockPool  0x2000'037c    0x50  Data  Lc  fsl_os_abstraction_bm.o [4]
+g_taskListHead          0x2000'03d0    0x10  Data  Lc  fsl_os_abstraction_bm.o [4]
+g_uartBaseAddr             0x1'7980    0x18  Data  Gb  fsl_uart_common.o [4]
+g_uartRxTxIrqId         0x2000'0000     0x8  Data  Gb  fsl_uart_common.o [4]
+g_uartStatePtr          0x2000'03e0    0x18  Data  Gb  fsl_uart_common.o [4]
+get_fat                    0x1'3417    0xd2  Code  Lc  ff.o [1]
+get_ldnumber               0x1'3eb3    0x52  Code  Lc  ff.o [1]
+hardware_init              0x1'66c1    0x50  Code  Gb  hardware_init.o [1]
+init_data_bss              0x1'72b5    0x74  Code  Gb  startup.o [1]
+init_mparams                 0xeb1b    0x2c  Code  Lc  dlmalloc.o [2]
+init_top                     0xeb47    0x34  Code  Lc  dlmalloc.o [2]
+kClockNameConfigTable      0x1'7a6c    0x14  Data  Gb  fsl_sim_hal_K64F12.o [4]
+ld_clust                   0x1'3921    0x26  Code  Lc  ff.o [1]
+ld_dword                   0x1'3211    0x16  Code  Lc  ff.o [1]
+ld_word                    0x1'3205     0xc  Code  Lc  ff.o [1]
+main                       0x1'65ab    0x9a  Code  Gb  main.o [1]
+mem_cmp                    0x1'3259    0x1e  Code  Lc  ff.o [1]
+mem_set                    0x1'324d     0xc  Code  Lc  ff.o [1]
+memchr                     0x1'5239          Code  Gb  memchr.o [6]
+move_window                0x1'33bf    0x3e  Code  Lc  ff.o [1]
+mparams                 0x2000'0414    0x18  Data  Lc  dlmalloc.o [2]
+oem2uni932                   0x7788  0x7378  Data  Lc  ffunicode.o [1]
+pin_setup                  0x1'64f3     0xa  Code  Gb  main.o [1]
+printf                     0x1'6685    0x28  Code  Gb  printf.o [2]
+put_fat                    0x1'34e9   0x122  Code  Lc  ff.o [1]
+putchar                    0x1'7875    0x20  Code  Gb  putchar.o [2]
+s_debugConsole          0x2000'0014    0x48  Data  Lc  fsl_debug_console.o [1]
+sai_state_ids           0x2000'0404     0x8  Data  Lc  fsl_sai_driver.o [4]
+sd_disk_initialize         0x1'460b    0x78  Code  Gb  fsl_sd_disk.o [1]
+sd_disk_read               0x1'45cd    0x30  Code  Gb  fsl_sd_disk.o [1]
+sd_disk_status             0x1'45fd     0xe  Code  Gb  fsl_sd_disk.o [1]
+sd_disk_write              0x1'459d    0x30  Code  Gb  fsl_sd_disk.o [1]
+sdhcCdPin                  0x1'7920    0x18  Data  Gb  gpio_pins.o [1]
+sdhc_card_detection        0x1'64fd    0x1e  Code  Gb  main.o [1]
+sdhc_cd_irqhandler         0x1'651b    0x1c  Code  Gb  main.o [1]
+sec_hand                0x2000'0604     0x4  Data  Lc  xfail_s.o [2]
+segment_holding              0xeb01    0x1a  Code  Lc  dlmalloc.o [2]
+st_dword                   0x1'3235    0x18  Code  Lc  ff.o [1]
+st_word                    0x1'3227     0xe  Code  Lc  ff.o [1]
+strchr                     0x1'51a9          Code  Gb  strchr.o [6]
+strlen                     0x1'5201          Code  Gb  strlen.o [6]
+sum_sfn                    0x1'39e9    0x20  Code  Lc  ff.o [1]
+sync_window                0x1'336f    0x50  Code  Lc  ff.o [1]
+task_init                  0x1'1489    0x34  Code  Gb  fsl_os_abstraction_bm.o [4]
+tchar2uni                  0x1'330f    0x60  Code  Lc  ff.o [1]
+time_diff                  0x1'136f    0x10  Code  Lc  fsl_os_abstraction_bm.o [4]
+uni2oem932                    0x410  0x7378  Data  Lc  ffunicode.o [1]
+
+
+[1] = C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo\iar\mapsk64\debug\obj
+[2] = dl7M_tln.a
+[3] = iar_cortexM4lf_math.a
+[4] = ksdk_platform_lib.a
+[5] = m7M_tls.a
+[6] = rt7M_tl.a
+[7] = shb_l.a
+
+  34'451 bytes of readonly  code memory
+  62'997 bytes of readonly  data memory
+  67'087 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

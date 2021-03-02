@@ -1,186 +1,186 @@
-"C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\startup\MK64F12\system_MK64F12.c"
+"C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\startup\MK64F12\system_MK64F12.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -MD
 -MF
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\system_MK64F12.pbi.dep
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\system_MK64F12.pbi.dep
 -o
 system_MK64F12.pbi
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\startup\MK64F12
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\startup\MK64F12
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/utilities
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/utilities
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/osa
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/osa
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/CMSIS/Include
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/CMSIS/Include
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/CMSIS/Include/device
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/CMSIS/Include/device
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/startup/MK64F12
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/startup/MK64F12
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/adc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/adc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/can
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/can
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/dac
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/dac
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/dmamux
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/dmamux
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/dspi
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/dspi
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/edma
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/edma
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/enet
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/enet
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/flextimer
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/flextimer
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/flexbus
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/flexbus
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/gpio
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/gpio
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/i2c
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/i2c
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/lptmr
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/lptmr
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/mcg
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/mcg
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/osc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/osc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/pdb
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/pdb
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/pit
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/pit
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/pmc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/pmc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/port
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/port
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/rtc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/rtc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/sai
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/sai
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/sdhc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/sdhc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/sim
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/sim
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/smc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/smc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/spi
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/spi
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/uart
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/uart
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/wdog
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/hal/wdog
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/adc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/adc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/adc/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/adc/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/can
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/can
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/can/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/can/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/edma
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/edma
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/edma/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/edma/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/dac
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/dac
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/dac/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/dac/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/dspi/dspi_master
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/dspi/dspi_master
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/dspi/dspi_slave
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/dspi/dspi_slave
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/dspi/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/dspi/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/enet
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/enet
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/enet/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/enet/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/enet/src
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/enet/src
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/flash
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/flash
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/flextimer
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/flextimer
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/flextimer/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/flextimer/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/gpio
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/gpio
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/gpio/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/gpio/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/i2c/i2c_master
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/i2c/i2c_master
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/i2c/i2c_slave
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/i2c/i2c_slave
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/i2c/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/i2c/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/lptmr
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/lptmr
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/lptmr/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/lptmr/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/mmcau
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/mmcau
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/pdb
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/pdb
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/pdb/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/pdb/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/pit
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/pit
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/pit/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/pit/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/rtc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/rtc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/rtc/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/rtc/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/sai
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/sai
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/sai/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/sai/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/sdhc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/sdhc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/sdhc/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/sdhc/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/sdcard
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/sdcard
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/soundcard
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/soundcard
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/spi
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/spi
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/spi/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/spi/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/uart
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/uart
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/uart/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/uart/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/wdog
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/wdog
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/wdog/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/wdog/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/system/clock
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/system/clock
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/system/hwtimer
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/system/hwtimer
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/system/interrupt
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/system/interrupt
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/system/power
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/system/power
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../boards/common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../boards/common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../boards/common/wm8960
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../boards/common/wm8960
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../boards/common/wm8960/src
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../boards/common/wm8960/src
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/soundcard
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/soundcard
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/soundcard/src
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/drivers/soundcard/src
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../boards/mapsk64
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../boards/mapsk64
 -I
 C:\kinetis\MAPS Material\MAPS-K64_1.0.0_SDK\MAPS-K64_1.0.0\filesystem\fatfs
 -I
@@ -190,11 +190,11 @@ C:\kinetis\MAPS Material\MAPS-K64_1.0.0_SDK\MAPS-K64_1.0.0\filesystem\fatfs\fsl_
 -I
 C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav\src
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs\fsl_sd_disk
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs\fsl_sd_disk
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs\fsl_sd_disk\src
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs\fsl_sd_disk\src
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\CMSIS\Core\Include
 -I
@@ -204,177 +204,177 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\utilities
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\utilities
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\osa
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\osa
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\CMSIS\Include
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\CMSIS\Include
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\CMSIS\Include\device
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\CMSIS\Include\device
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\startup\MK64F12
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\startup\MK64F12
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\adc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\adc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\can
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\can
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\dac
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\dac
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\dmamux
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\dmamux
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\dspi
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\dspi
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\edma
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\edma
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\enet
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\enet
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\flextimer
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\flextimer
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\flexbus
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\flexbus
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\gpio
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\gpio
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\i2c
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\i2c
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\lptmr
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\lptmr
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\mcg
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\mcg
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\osc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\osc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\pdb
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\pdb
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\pit
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\pit
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\pmc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\pmc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\port
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\port
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\rtc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\rtc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\sai
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\sai
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\sdhc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\sdhc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\sim
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\sim
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\smc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\smc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\spi
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\spi
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\uart
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\uart
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\hal\wdog
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\hal\wdog
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\adc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\adc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\adc\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\adc\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\can
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\can
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\can\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\can\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\edma
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\edma
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\edma\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\edma\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\dac
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\dac
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\dac\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\dac\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\dspi\dspi_master
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\dspi\dspi_master
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\dspi\dspi_slave
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\dspi\dspi_slave
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\dspi\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\dspi\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\enet
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\enet
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\enet\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\enet\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\enet\src
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\enet\src
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\flash
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\flash
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\flextimer
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\flextimer
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\flextimer\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\flextimer\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\gpio
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\gpio
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\gpio\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\gpio\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\i2c\i2c_master
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\i2c\i2c_master
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\i2c\i2c_slave
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\i2c\i2c_slave
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\i2c\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\i2c\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\lptmr
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\lptmr
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\lptmr\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\lptmr\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\mmcau
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\mmcau
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\pdb
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\pdb
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\pdb\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\pdb\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\pit
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\pit
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\pit\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\pit\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\rtc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\rtc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\rtc\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\rtc\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\sai
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\sai
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\sai\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\sai\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\sdhc
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\sdhc
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\sdhc\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\sdhc\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\sdcard
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\sdcard
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\soundcard
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\soundcard
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\spi
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\spi
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\spi\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\spi\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\uart
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\uart
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\uart\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\uart\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\wdog
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\wdog
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\wdog\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\wdog\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\system\clock
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\system\clock
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\system\hwtimer
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\system\hwtimer
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\system\interrupt
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\system\interrupt
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\system\power
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\system\power
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\boards\common
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\boards\common
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\boards\common\wm8960
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\boards\common\wm8960
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\boards\common\wm8960\src
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\boards\common\wm8960\src
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\soundcard
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\soundcard
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\platform\drivers\soundcard\src
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\platform\drivers\soundcard\src
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\boards\mapsk64
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\boards\mapsk64
 -I
 C:\kinetis\MAPS Material\MAPS-K64_1.0.0_SDK\MAPS-K64_1.0.0\filesystem\fatfs
 -I
@@ -384,11 +384,11 @@ C:\kinetis\MAPS Material\MAPS-K64_1.0.0_SDK\MAPS-K64_1.0.0\filesystem\fatfs\fsl_
 -I
 C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav\src
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\filesystem\fatfs
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\filesystem\fatfs
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\filesystem\fatfs\fsl_sd_disk
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\filesystem\fatfs\fsl_sd_disk
 -I
-C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\filesystem\fatfs\fsl_sd_disk\src
+C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\filesystem\fatfs\fsl_sd_disk\src
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\CMSIS\Core\Include
 -I
