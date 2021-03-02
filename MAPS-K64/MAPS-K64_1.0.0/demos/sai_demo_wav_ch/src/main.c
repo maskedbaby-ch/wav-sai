@@ -84,7 +84,7 @@ extern menu_state_t g_menuState;
 static semaphore_t cd; /*!< Semaphore for card detection indication */
 static volatile uint32_t cardInserted = 0; /*!< Flag to indicate a card has been inserted */
 static volatile uint32_t cardInited = 0; /*!< Flag to indicate the card has been initialized successfully */
-task_handler_t musicControl;
+
 
 #if !(defined(CPU_MK22FN128VDC10) || defined(CPU_MK22FN256VDC12))
 float32_t g_dspStore[2 * AUDIO_BUFFER_BLOCK_SIZE];
@@ -206,7 +206,7 @@ int main (void)
 { 
     FRESULT error;
     DIR directory;
-    TCHAR* fileame[13];
+    TCHAR* fileame[18];
     uint32_t index = 0;
     uint8_t filePrefix[20] = "1:/music/";
     __wavctrl wav_temp;

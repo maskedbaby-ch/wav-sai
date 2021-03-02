@@ -1,5 +1,5 @@
 cc936.pbi: \
-  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\filesystem\fatfs\option\cc936.c \
-  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs\ff.h \
-  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs/integer.h \
-  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs/ffconf.h
+  C:\kinetis\MAPS\ Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\filesystem\fatfs\option\cc936.c \
+  C:\kinetis\MAPS\ Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs\ff.h \
+  C:\kinetis\MAPS\ Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs/integer.h \
+  C:\kinetis\MAPS\ Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\..\..\..\..\filesystem\fatfs/ffconf.h

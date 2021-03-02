@@ -1,68 +1,68 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.2.214/W32 for ARM                  01/Mar/2021  15:24:59
+# IAR ELF Linker V8.40.2.214/W32 for ARM                  02/Mar/2021  14:32:00
 # Copyright 2007-2019 IAR Systems AB.
 #
 #    Output file  =
 #        C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\sai_demo.out
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\sai_demo.out
 #    Map file     =
 #        C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\list\sai_demo.map
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\list\sai_demo.map
 #    Command line =
-#        -f C:\Users\nxf56274\AppData\Local\Temp\1\EWD525.tmp ("C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\audio.o"
+#        -f C:\Users\nxf56274\AppData\Local\Temp\1\EW6F38.tmp ("C:\kinetis\MAPS
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\audio.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\cc936.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\cc936.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\diskio.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\diskio.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\equalizer.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\equalizer.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\ff.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\ff.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_debug_console.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_debug_console.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_edma_irq.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_edma_irq.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_i2c_irq.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_i2c_irq.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_sai_irq.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_sai_irq.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_sd_disk.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_sd_disk.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_sdhc_irq.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_sdhc_irq.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_soundcard.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_soundcard.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_wm8960_driver.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\fsl_wm8960_driver.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\gpio_pins.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\gpio_pins.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\hardware_init.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\hardware_init.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\main.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\main.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\pin_mux.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\pin_mux.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\startup.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\startup.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\startup_MK64F12.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\startup_MK64F12.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\system_MK64F12.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\system_MK64F12.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\terminal_menu.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\terminal_menu.o"
 #        "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\wav.o"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj\wav.o"
 #        --redirect _Printf=_PrintfSmallNoMb --redirect _Scanf=_ScanfSmallNoMb
 #        --no_out_extension -o "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\sai_demo.out"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\sai_demo.out"
 #        --map "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\list\sai_demo.map"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\list\sai_demo.map"
 #        --config "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/linker/iar/K64F12/K64FN1Mxxx12_flash.icf"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../platform/linker/iar/K64F12/K64FN1Mxxx12_flash.icf"
 #        --semihosting "C:\kinetis\MAPS
-#        Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../lib/ksdk_platform_lib/iar/K64F12/debug/ksdk_platform_lib.a"
+#        Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64/../../../../lib/ksdk_platform_lib/iar/K64F12/debug/ksdk_platform_lib.a"
 #        --entry __iar_program_start "C:\Program Files (x86)\IAR
 #        Systems\Embedded Workbench
 #        8.3\arm\CMSIS\Lib\IAR\iar_cortexM4lf_math.a" --vfe --text_out locale)
@@ -445,7 +445,7 @@ command line/config:
     ----------------------------------------------------
     Total:
 
-C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj: [1]
+C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj: [1]
     audio.o                      1'112       33    4'687
     cc936.o                        404  175'032
     diskio.o                       146
@@ -1375,7 +1375,7 @@ wav_decode_init            0x3'61d5     0x14c  Code  Gb  wav.o [1]
 wm8960_reg                 0x3'83ac      0x70  Data  Lc  fsl_wm8960_driver.o [1]
 
 
-[1] = C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj
+[1] = C:\kinetis\MAPS Material\wav\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\obj
 [2] = dl7M_tln.a
 [3] = iar_cortexM4lf_math.a
 [4] = ksdk_platform_lib.a
