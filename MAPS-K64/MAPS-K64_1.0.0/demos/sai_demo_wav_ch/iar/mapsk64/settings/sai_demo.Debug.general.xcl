@@ -2,7 +2,7 @@
 
 "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armjlink2.dll" 
 
-"C:\kinetis\MAPS Material\K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\sai_demo.out" 
+"C:\kinetis\MAPS Material\test\wav-sai\MAPS-K64\MAPS-K64_1.0.0\demos\sai_demo_wav_ch\iar\mapsk64\debug\sai_demo.out" 
 
 --plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\bin\armbat.dll" 
 
