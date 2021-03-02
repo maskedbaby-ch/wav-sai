@@ -206,7 +206,7 @@ int main (void)
 { 
     FRESULT error;
     DIR directory;
-    TCHAR* fileame[13];
+    TCHAR* fileame[18];
     uint32_t index = 0;
     uint8_t filePrefix[20] = "1:/music/";
     __wavctrl wav_temp;
