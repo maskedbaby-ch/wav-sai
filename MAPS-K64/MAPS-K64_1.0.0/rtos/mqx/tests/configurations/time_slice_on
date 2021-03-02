@@ -1,0 +1,2 @@
+#undef  MQX_HAS_TIME_SLICE
+#define MQX_HAS_TIME_SLICE  1

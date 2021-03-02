@@ -1,0 +1,54 @@
+#undef  MQX_USE_EVENTS
+#define MQX_USE_EVENTS              1
+
+#undef  MQX_USE_LWEVENTS
+#define MQX_USE_LWEVENTS            1
+
+#undef  MQX_USE_LOGS
+#define MQX_USE_LOGS                1
+
+#undef  MQX_USE_LWLOGS
+#define MQX_USE_LWLOGS              1
+
+#undef  MQX_USE_MESSAGES
+#define MQX_USE_MESSAGES                1
+#undef  MQXCFG_ENABLE_MSG_TIMEOUT_ERROR
+#define MQXCFG_ENABLE_MSG_TIMEOUT_ERROR 1
+
+#undef  MQX_USE_LWMSGQ
+#define MQX_USE_LWMSGQ              1
+
+#undef  MQX_USE_SEMAPHORES
+#define MQX_USE_SEMAPHORES          1
+
+#undef  MQX_USE_MUTEXES
+#define MQX_USE_MUTEXES             1
+#undef  MQX_MUTEX_HAS_POLLING
+#define MQX_MUTEX_HAS_POLLING       1
+
+#undef  MQX_USE_NAME
+#define MQX_USE_NAME                1
+
+#undef  MQX_USE_PARTITIONS
+#define MQX_USE_PARTITIONS          1
+
+#undef  MQX_USE_TIMER
+#define MQX_USE_TIMER               1
+
+#undef  MQX_USE_LWTIMER
+#define MQX_USE_LWTIMER             1
+
+#undef  MQX_USE_SW_WATCHDOGS
+#define MQX_USE_SW_WATCHDOGS        1
+
+#undef  MQX_COMPONENT_DESTRUCTION
+#define MQX_COMPONENT_DESTRUCTION   1
+
+#undef  MQX_EXIT_ENABLED
+#define MQX_EXIT_ENABLED            1
+
+#undef  MQX_USE_IDLE_TASK
+#define MQX_USE_IDLE_TASK           1
+
+#undef  MQX_TASK_DESTRUCTION
+#define MQX_TASK_DESTRUCTION        1

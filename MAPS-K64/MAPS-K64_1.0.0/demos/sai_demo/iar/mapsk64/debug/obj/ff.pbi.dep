@@ -1,0 +1,7 @@
+ff.pbi: \
+  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo\fatfs\ff.c \
+  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo\fatfs/ff.h \
+  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo\fatfs/integer.h \
+  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo\fatfs/ffconf.h \
+  C:\kinetis\MAPS\ Material\K64\MAPS-K64_1.0.0\demos\sai_demo\fatfs/diskio.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdarg.h

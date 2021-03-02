@@ -1,0 +1,31 @@
+A step by step guide to run the MQX example application.
+
+1. Open workspace project in the "{mcu-sdk}rtos\mqx\mqx\examples_osa\examples_{board name}.eww" in IAR Workbench.
+2. Build the platform_mqx_lib.ewp project for a specific platform.
+3. Build the PSP and BSP projects.
+4. Build a selected example application.
+5. Download the application to a target board and run.
+
+FRDM-K22F120M board
+- The default debugger connection is OpenSDA.
+- The default debug console is USB.
+
+FRDM-K64F120M board
+- The default debugger connection is CMSIS-DAP.
+- The default debug console is USB.
+
+TWR-K22F120M board
+- The default debugger connection is J-Link.
+- The default debug console is USB / TWR-SER.
+
+TWR-K64F120M board
+- The default debugger connection is OpenSDA.
+- The default debug console is USB.
+You can change the debug console in the rtos\mqx\config\board\twrk64f120m\user_config.h
+
+/* OpenSDA = 1, TWR-SER = 5 */
+#define BOARD_DEBUG_UART_INSTANCE          (1)
+#define BOARD_DEBUG_UART_BAUD              (115200)
+
+Send bug reports and proposals to petr.uhlir@freescale.com.
+

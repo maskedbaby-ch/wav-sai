@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<!--This file is designed to identify Kinetis SDK release.-->
+<manifest format_version="1.0">
+  <ksdk version="1.0.0-GA"/>
+  <api version="1.0.0-GA"/>
+  <compilers>
+    <compiler name="arm" />
+    <compiler name="gcc" />
+    <compiler name="iar" />
+  </compilers>
+  <boards>
+    <board name="MAPS-K64F" package="MK64FN1M0VLL12">
+      <source value="boards\mapsk64\*.c"/>
+      <source value="boards\mapsk64\*.h"/>
+    </board>  
+  </boards>
+  <devices>
+    <source value="platform\startup\*.h"/>
+    <source value="platform\startup\*.c"/>
+    <source value="platform\startup\$[device]\*.*"/>
+    <source value="platform\startup\$[device]\$[compiler]\*.*"/>
+    <device name="MK64F12" full_name="MK64FN1M0xxx12">
+      <package name="MK64FN1M0VDC12"/>
+      <package name="MK64FN1M0VLL12"/>
+      <package name="MK64FN1M0VLQ12"/>
+      <package name="MK64FN1M0VMD12"/>
+    </device>
+  </devices>
+  <components>
+    <!--drv-->
+    <component name="adc" type="driver">
+      <source value="platform\drivers\adc\*.h"/>
+      <source value="platform\drivers\adc\*.c"/>
+      <source value="platform\drivers\adc\src\*.*"/>
+      <source value="platform\drivers\adc\common\*.*"/>
+    </component>
+    <component name="can" type="driver">
+      <source value="platform\drivers\can\*.h"/>
+      <source value="platform\drivers\can\*.c"/>
+      <source value="platform\drivers\can\src\*.*"/>
+    </component>
+    <component name="dac" type="driver">
+      <source value="platform\drivers\dac\*.h"/>
+      <source value="platform\drivers\dac\*.c"/>
+      <source value="platform\drivers\dac\src\*.*"/>
+      <source value="platform\drivers\dac\common\*.*"/>
+    </component>
+    <component name="dspi" type="driver">
+      <source value="platform\drivers\dspi\*.h"/>
+      <source value="platform\drivers\dspi\*.c"/>
+      <source value="platform\drivers\dspi\common\*.*"/>		
+      <source value="platform\drivers\dspi\dspi_master\*.*"/>
+      <source value="platform\drivers\dspi\dspi_master\src*.*"/>
+      <source value="platform\drivers\dspi\dspi_slave\*.*"/>
+      <source value="platform\drivers\dspi\dspi_slave\src*.*"/>
+    </component>
+    <component name="edma" type="driver">
+      <source value="platform\drivers\edma\*.h"/>
+      <source value="platform\drivers\edma\*.c"/>
+      <source value="platform\drivers\edma\src\*.*"/>
+      <source value="platform\drivers\edma\common\*.*"/>
+    </component>
+    <component name="enet" type="driver">
+      <source value="platform\drivers\enet\*.h"/>
+      <source value="platform\drivers\enet\*.c"/>
+      <source value="platform\drivers\enet\src\*.*"/>
+      <source value="platform\drivers\enet\common\*.*"/>
+    </component>
+    <component name="flash" type="driver">
+      <source value="platform\drivers\flash\C90TFS\drvsrc\include\*.*" />
+      <source value="platform\drivers\flash\C90TFS\drvsrc\source\*.*" />
+    </component>
+    <component name="flextimer" type="driver">
+      <source value="platform\drivers\flextimer\*.h"/>
+      <source value="platform\drivers\flextimer\*.c"/>
+      <source value="platform\drivers\flextimer\src\*.*"/>
+    </component>
+    <component name="gpio" type="driver">
+      <source value="platform\drivers\gpio\*.h"/>
+      <source value="platform\drivers\gpio\*.c"/>
+      <source value="platform\drivers\gpio\src\*.*"/>
+      <source value="platform\drivers\gpio\common\*.*"/>
+    </component>
+    <component name="i2c" type="driver">
+      <source value="platform\drivers\i2c\*.h"/>
+      <source value="platform\drivers\i2c\*.c"/>
+      <source value="platform\drivers\i2c\common\*.*"/>
+      <source value="platform\drivers\i2c\i2c_master\*.*"/>
+      <source value="platform\drivers\i2c\i2c_master\src\*.*"/>
+      <source value="platform\drivers\i2c\i2c_slave\*.*"/>
+      <source value="platform\drivers\i2c\i2c_slave\src\*.*"/>
+    </component>
+    <component name="lptmr" type="driver">
+      <source value="platform\drivers\lptmr\*.h"/>
+      <source value="platform\drivers\lptmr\*.c"/>
+      <source value="platform\drivers\lptmr\src\*.*"/>
+      <source value="platform\drivers\lptmr\common\*.*"/>
+    </component>
+    <component name="lpuart" type="driver">
+      <source value="platform\drivers\lpuart\*.h"/>
+      <source value="platform\drivers\lpuart\*.c"/>
+      <source value="platform\drivers\lpuart\src\*.*"/>
+      <source value="platform\drivers\lpuart\common\*.*"/>
+    </component>
+    <component name="mmcau" type="driver">
+      <source value="platform\drivers\mmcau\src\*.*"/>
+    </component>
+    <component name="mpu" type="driver">
+      <source value="platform\drivers\mpu\*.h"/>
+      <source value="platform\drivers\mpu\*.c"/>
+      <source value="platform\drivers\mpu\src\*.*"/>
+      <source value="platform\drivers\mpu\common\*.*"/>
+    </component>
+    <component name="pdb" type="driver">
+      <source value="platform\drivers\pdb\*.h"/>
+      <source value="platform\drivers\pdb\*.c"/>
+      <source value="platform\drivers\pdb\src\*.*"/>
+      <source value="platform\drivers\pdb\common\*.*"/>
+    </component>
+    <component name="pit" type="driver">
+      <source value="platform\drivers\pit\*.h"/>
+      <source value="platform\drivers\pit\*.c"/>
+      <source value="platform\drivers\pit\src\*.*"/>
+      <source value="platform\drivers\pit\common\*.*"/>
+    </component>
+    <component name="rtc" type="driver">
+      <source value="platform\drivers\rtc\*.h"/>
+      <source value="platform\drivers\rtc\*.c"/>
+      <source value="platform\drivers\rtc\src\*.*"/>
+    </component>
+    <component name="sai" type="driver">
+      <source value="platform\drivers\sai\*.h"/>
+      <source value="platform\drivers\sai\*.c"/>
+      <source value="platform\drivers\sai\src\*.*"/>
+      <source value="platform\drivers\sai\common\*.*"/>
+    </component>
+    <component name="sdcard" type="driver">
+      <source value="platform\drivers\sdcard\*.*"/>
+      <source value="platform\drivers\sdcard\src\*.*"/>
+    </component>
+    <component name="sdhc" type="driver">
+      <source value="platform\drivers\sdhc\*.h"/>
+      <source value="platform\drivers\sdhc\*.c"/>
+      <source value="platform\drivers\sdhc\src\*.*"/>
+      <source value="platform\drivers\sdhc\common\*.*"/>
+    </component>
+    <component name="soundcard" type="driver">
+      <source value="platform\drivers\soundcard\*.h"/>
+      <source value="platform\drivers\soundcard\*.c"/>
+      <source value="platform\drivers\soundcard\src\*.*"/>
+    </component>
+    <component name="uart" type="driver">
+      <source value="platform\drivers\uart\*.h"/>
+      <source value="platform\drivers\uart\*.c"/>
+      <source value="platform\drivers\uart\common\*.*"/>
+      <source value="platform\drivers\uart\common\*.*"/>
+    </component>
+    <component name="wdog" type="driver">
+      <source value="platform\drivers\wdog\*.h"/>
+      <source value="platform\drivers\wdog\*.c"/>
+      <source value="platform\drivers\wdog\common\*.*"/>
+      <source value="platform\drivers\wdog\src\*.*"/>
+    </component>
+    <!--hal--> 	
+    <component name="adc" type="hal">
+      <source value="platform\hal\adc\*.h"/>
+      <source value="platform\hal\adc\*.c"/>
+    </component>
+    <component name="can" type="hal">
+      <source value="platform\hal\can\*.h"/>
+      <source value="platform\hal\can\*.c"/>
+    </component>
+    <component name="dac" type="hal">
+      <source value="platform\hal\dac\*.h"/>
+      <source value="platform\hal\dac\*.c"/>
+    </component>
+    <component name="dmamux" type="hal">
+      <source value="platform\hal\dmamux\*.h"/>
+      <source value="platform\hal\dmamux\*.c"/>
+    </component>
+    <component name="dspi" type="hal">
+      <source value="platform\hal\dspi\*.h"/>
+      <source value="platform\hal\dspi\*.c"/>
+    </component>
+    <component name="edma" type="hal">
+      <source value="platform\hal\edma\*.h"/>
+      <source value="platform\hal\edma\*.c"/>
+    </component>
+    <component name="enet" type="hal">
+      <source value="platform\hal\enet\*.h"/>
+      <source value="platform\hal\enet\*.c"/>
+    </component>
+    <component name="flextimer" type="hal">
+      <source value="platform\hal\flextimer\*.h"/>
+      <source value="platform\hal\flextimer\*.c"/>
+    </component>
+    <component name="gpio" type="hal">
+      <source value="platform\hal\gpio\*.h"/>
+      <source value="platform\hal\gpio\*.c"/>
+    </component>
+    <component name="i2c" type="hal">
+      <source value="platform\hal\i2c\*.h"/>
+      <source value="platform\hal\i2c\*.c"/>
+    </component>
+    <component name="llwu" type="hal">
+      <source value="platform\hal\llwu\*.h"/>
+      <source value="platform\hal\llwu\*.c"/>
+    </component>
+    <component name="lptmr" type="hal">
+      <source value="platform\hal\lptmr\*.h"/>
+      <source value="platform\hal\lptmr\*.c"/>
+    </component>
+    <component name="lpuart" type="hal">
+      <source value="platform\hal\lpuart\*.h"/>
+      <source value="platform\hal\lpuart\*.c"/>
+    </component>
+    <component name="mcg" type="hal">
+      <source value="platform\hal\mcg\*.h"/>
+      <source value="platform\hal\mcg\*.c"/>
+    </component>
+    <component name="mpu" type="hal">
+      <source value="platform\hal\mpu\*.h"/>
+      <source value="platform\hal\mpu\*.c"/>
+    </component>
+    <component name="osc" type="hal">
+      <source value="platform\hal\osc\*.h"/>
+      <source value="platform\hal\osc\*.c"/>
+    </component>
+    <component name="pdb" type="hal">
+      <source value="platform\hal\pdb\*.h"/>
+      <source value="platform\hal\pdb\*.c"/>
+    </component>
+    <component name="pit" type="hal">
+      <source value="platform\hal\pit\*.h"/>
+      <source value="platform\hal\pit\*.c"/>
+    </component>
+    <component name="pmc" type="hal">
+      <source value="platform\hal\pmc\*.h"/>
+      <source value="platform\hal\pmc\*.c"/>
+    </component>
+    <component name="port" type="hal">
+      <source value="platform\hal\port\*.h"/>
+      <source value="platform\hal\port\*.c"/>
+    </component>
+    <component name="rcm" type="hal">
+      <source value="platform\hal\rcm\*.h"/>
+      <source value="platform\hal\rcm\*.c"/>
+    </component>
+    <component name="rtc" type="hal">
+      <source value="platform\hal\rtc\*.h"/>
+      <source value="platform\hal\rtc\*.c"/>
+    </component>
+    <component name="sai" type="hal">
+      <source value="platform\hal\sai\*.h"/>
+      <source value="platform\hal\sai\*.c"/>
+    </component>
+    <component name="sdhc" type="hal">
+      <source value="platform\hal\sdhc\*.h"/>
+      <source value="platform\hal\sdhc\*.c"/>
+    </component>
+    <component name="sim" type="hal">
+      <source value="platform\hal\sim\$[device]\fsl_sim_hal_$[device].*"/>
+      <source value="platform\hal\sim\fsl_sim_hal.*"/>
+      <source value="platform\hal\sim\fsl_sim_features.*"/>
+    </component>
+    <component name="smc" type="hal">
+      <source value="platform\hal\smc\*.h"/>
+      <source value="platform\hal\smc\*.c"/>
+    </component>
+    <component name="uart" type="hal">
+      <source value="platform\hal\uart\*.h"/>
+      <source value="platform\hal\uart\*.c"/>
+    </component>
+    <component name="wdog" type="hal">
+      <source value="platform\hal\wdog\*.h"/>
+      <source value="platform\hal\wdog\*.c"/>
+    </component>
+    <!--sys-->
+    <component name="clock" type="system">
+      <source value="platform\system\clock\*.h"/>
+      <source value="platform\system\clock\*.c"/>
+      <source value="platform\system\clock\$[device]\*.*"/>
+    </component>
+    <component name="hwtimer" type="system">
+      <source value="platform\system\hwtimer\*.h"/>
+      <source value="platform\system\hwtimer\src\*.c"/>
+    </component>
+    <component name="interrupt" type="system">
+      <source value="platform\system\interrupt\*.h"/>
+      <source value="platform\system\interrupt\src\*.c"/>
+    </component>
+    <component name="power" type="system">
+      <source value="platform\system\power\*.h"/>
+      <source value="platform\system\power\src\*.c"/>
+    </component>
+    <!--osa-->
+    <component name="os_abstraction" type="osa">
+      <source value="platform\osa\*.h"/>
+      <source value="platform\osa\src\*.c"/>
+    </component>
+    <!--util-->
+    <component name="debug_console" type="utilities">
+      <source value="platform\utilities\fsl_debug_console.h"/>
+      <source value="platform\utilities\src\fsl_debug_console.c"/>
+    </component>
+    <component name="misc_utilities" type="utilities">
+      <source value="platform\utilities\fsl_misc_utilities.h"/>
+      <source value="platform\utilities\src\fsl_misc_utilities.c"/>
+    </component>
+  </components>
+</manifest>

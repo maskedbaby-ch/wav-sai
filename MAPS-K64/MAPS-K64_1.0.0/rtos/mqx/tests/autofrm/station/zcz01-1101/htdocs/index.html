@@ -1,0 +1,1111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <title>Roznov CSC IMMSW test autofrm station zcz01-1101</title>
+  </head>
+  <body>
+    <font face="Arial">
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+            <big><big>
+            Roznov CSC IMMSW test autofrm station <a href="http://zcz01-1101.ea.freescale.net/">zcz01-1101</a> (or <a href="http://zermatt/">zermatt</a>)
+            </big></big><br>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <img style="width: 700px; height: 150px;" alt="" src="images/zermatt.jpg">
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+        <hr style="height: 1px; width: 100%;" noshade="noshade">
+        </td>
+      </tr>
+    </table>
+
+    <b>Rules while access the test stations locally or via remote desktop connection:</b><br><br>
+    1) use only service account (<b>zcz01vav01-svc</b>) and its password (password is updated only by V&V team members,
+     all of its users are notified then by email)<br>
+    2) before log-in check with test station responsible administration contact if the station is not used
+     by someone already or for some specific purpose<br>
+    3) do not leave any personal artifacts after your work (folders and files), except allowed inside the
+     temporary folder c:/temp<br>
+    4) do not install any additional not-necessary SW<br>
+    <br>
+    <hr style="height: 1px; width: 100%;" noshade="noshade">
+<!--
+    <br>
+    <b>Service account (zcz01vav01-svc) current users:</b>
+    <br><br>
+    1) Volokitin Vadym-B23362<br>
+    2) Kolarik Rene-B35850<br>
+    3) Starecek Michal-B36573<br>
+    4) Cingel Marian-B37642<br>
+    5) Vaclav Hamersky-B21889<br>
+    6) Vanek Vladimir-B35211<br>
+    7) Machala Petr-B21472<br>
+    8) Lukas Petr-B15337<br>
+    <br>
+-->
+
+    <table align="center" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <big><big>Active Test station list - Roznov</big></big>
+      <tr>
+        <th>Station</th>
+        <th>Platform</th>
+        <th>Purpose</th>
+        <th>Test results</th>
+        <th>Compiler</th>
+        <th>DEBUGGER_SW</th>
+        <th>DEBUGGER_HW</th>
+        <th>Administration</th>
+        <th>PC type</th>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-1101</td>
+        <td align="left">n/a</td>
+        <td align="left">this http server</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 740</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-1101</td>
+        <td align="left">all</td>
+        <td align="left">DashBoard</td>
+        <td align="left"><a href="http://zcz01-1101:81/board" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 740</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-1108</td>
+        <td align="left">all</td>
+        <td align="left">New DashBoard<br>under developement</td>
+        <td align="left"><a href="http://zcz01-1108:81/board" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 740</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-3035</td>
+        <td align="left">MQX Wiki</td>
+        <td align="left">Current tests known issues</td>
+        <td align="left"><a href="http://zcz01-3035/wiki/doku.php?id=tests:issues:failed_tests" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-1106</td>
+        <td align="left">Freedom board<br>mkl25z128vlk4</td>
+        <td align="left">execution machine</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">T32 ARM</td>
+        <td align="left">Lauterbach</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-1109</td>
+        <td align="left">Platforms on Lauterbach</td>
+        <td align="left">Integration tests</td>
+        <td align="left"><a href="http://zcz01-1109/0/project/tests" target="_blank">link</a></td>
+        <td align="left">all</td>
+        <td align="left" colspan="2">RemoteRun all over the place</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-1110</td>
+        <td align="left">twrk60d100m<br>2N22D</td>
+        <td align="left">execution machine</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">T32 ARM</td>
+        <td align="left">Lauterbach</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-1112</td>
+        <td align="left">twrmcf52259:<br>MCF52259CAG80 <br>1M42N</td>
+        <td align="left">build + exec</td>
+        <td align="left"><a href="http://zcz01-1112/0/project/tests" target="_blank">link</a></td>
+        <td align="left">cw10</td>
+        <td align="left">P&E ICDCFW</td>
+        <td align="left">P&E USB Coldfire Multilink</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-1113</td>
+        <td align="left">twrmcf54418:<br>MCF54418CMJ250 <br>1M38W</td>
+        <td align="left">build + exec</td>
+        <td align="left"><a href="http://zcz01-1113/0/project/tests" target="_blank">link</a></td>
+        <td align="left">cw10</td>
+        <td align="left">cw10</td>
+        <td align="left">P&E USB Coldfire Multilink</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-3021</td>
+        <td align="left">twrk21f120m<br>twrk22f120m</td>
+        <td align="left">execution machine</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">T32 ARM</td>
+        <td align="left">Lauterbach</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-3023</td>
+        <td align="left">twrpxs30:<br>PPC5675X</td>
+        <td align="left">execution machine</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">T32 PPC</td>
+        <td align="left">Lauterbach</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-3024</td>
+        <td align="left">AutoEVB A5<br>AutoEVB M4</td>
+        <td align="left">execution machine</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">T32 ARM</td>
+        <td align="left">Lauterbach</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-3032</td>
+        <td align="left">twrk70f120m<br>0N96B/WFR3</td>
+        <td align="left">execution machine</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">T32 ARM</td>
+        <td align="left">Lauterbach</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-3033</td>
+        <td align="left">twrvf65gs10_a5 - 0N02G<br>twrvf65gs10_m4 - 0N02G</td>
+        <td align="left">execution machine</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">T32 ARM</td>
+        <td align="left">Lauterbach</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+
+      <tr bgcolor="#00FF00">
+        <td align="left" rowspan=4>zcz01-8001</td>
+        <td align="left">twrvf65gs10_a5</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8001/0/project/tests" target="_blank">link</a></td>
+        <td align="left">ds5, iar, gcc_cs, gcc_arm</td>
+        <td align="left" colspan=2 rowspan=2>RemoteRun on zcz01-3033</td>
+        <td align="left" rowspan=4>Michal Starecek</td>
+        <td align="left" rowspan=4>DELL Precision R5500</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">twrvf65gs10_m4</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8001/1/project/tests" target="_blank">link</a></td>
+        <td align="left">ds5, iar, gcc_cs, gcc_arm</td>
+      </tr >
+      <tr bgcolor="#00FF00">
+        <td align="left">AutoEVB A5</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8001/2/project/tests" target="_blank">link</a></td>
+        <td align="left">ds5, iar, gcc_cs, gcc_arm</td>
+        <td align="left" colspan=2 rowspan=2>RemoteRun on zcz01-3024</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">AutoEVB M4</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8001/3/project/tests" target="_blank">link</a></td>
+        <td align="left">ds5, iar, gcc_cs, gcc_arm</td>
+      </tr>
+
+      <tr bgcolor="#00FF00">
+        <td align="left" rowspan=4>zcz01-8002</td>
+        <td align="left">twrk60d100m</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8002/0/project/tests" target="_blank">link</a></td>
+        <td align="left">keil, cw10gcc, iar, gcc_arm</td>
+        <td align="left" colspan=2>RemoteRun on zcz01-1110</td>
+        <td align="left" rowspan=4>Michal Starecek</td>
+        <td align="left" rowspan=4>DELL Precision R5500</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">twrk70f120m</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8002/1/project/tests" target="_blank">link</a></td>
+        <td align="left">keil, cw10gcc, iar, gcc_arm</td>
+        <td align="left" colspan=2 rowspan=2>RemoteRun on zcz01-3032</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">twrk70f120m_nio</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8002/2/project/tests" target="_blank">link</a></td>
+        <td align="left">keil, cw10gcc, iar, gcc_arm</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">twrpxs30</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8002/3/project/tests" target="_blank">link</a></td>
+        <td align="left">cw10</td>
+        <td align="left" colspan=2>RemoteRun on zcz01-3023</td>
+      </tr>
+
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-8003</td>
+        <td align="left">twrk60d100m - VectorCAST</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8003/1/project/tests" target="_blank">link</a></td>
+        <td align="left">iar</td>
+        <td align="left" colspan=2>RemoteRun on zcz01-1110</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL Precision R5500</td>
+      </tr>
+
+      <tr bgcolor="#00FF00">
+        <td align="left" rowspan=4>zcz01-8004</td>
+        <td align="left">twrk21f120m</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8004/0/project/tests" target="_blank">link</a></td>
+        <td align="left">keil, cw10gcc, iar</td>
+        <td align="left" colspan=2 rowspan=2>RemoteRun on zcz01-3021</td>
+        <td align="left" rowspan=4>Michal Starecek</td>
+        <td align="left" rowspan=4>DELL Precision R5500</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">twrk22f120m</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8004/1/project/tests" target="_blank">link</a></td>
+        <td align="left">keil, cw10gcc, iar</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">Freedom board - DEBUG</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8004/2/project/tests" target="_blank">link</a></td>
+        <td align="left">keil, cw10gcc, iar</td>
+        <td align="left" colspan=2 rowspan=2>RemoteRun on zcz01-1106</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">Freedom board - RELEASE</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://zcz01-8004/3/project/tests" target="_blank">link</a></td>
+        <td align="left">keil, cw10gcc, iar</td>
+      </tr>
+
+    </table>
+    <br>
+    <hr style="height: 1px; width: 100%;" noshade="noshade">
+
+
+    <table align="center" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <big><big>Active Test station list - Shanghai</big></big>
+      <tr>
+        <th>Station</th>
+        <th>Platform</th>
+        <th>Purpose</th>
+        <th>Test results</th>
+        <th>Compiler</th>
+        <th>DEBUGGER_SW</th>
+        <th>DEBUGGER_HW</th>
+        <th>Administration</th>
+        <th>PC type</th>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">umbrella</td>
+        <td align="left">n/a</td>
+        <td align="left">Shanghai test stations web</td>
+        <td align="left"><a href="http://umbrella/vnv/teststation.html" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">Joe Zhou</td>
+        <td align="left">---</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left" rowspan=3">vnvbuildserver1</td>
+        <td align="left">twrk40x256</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://10.192.225.198/0/project/tests" target="_blank">link</a></td>
+        <td align="left">keil, iar, gcc_arm</td>
+        <td align="left" rowspan=3 colspan=2>RemoteRun on b17496-10</td>
+        <td align="left">Joe Zhou</td>
+        <td align="left">---</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">twrk53n512</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://10.192.225.198/1/project/tests" target="_blank">link</a></td>
+        <td align="left">keil, iar, cw10gcc</td>
+        <td align="left">Joe Zhou</td>
+        <td align="left">---</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">twrk21d50m</td>
+        <td align="left">build machine</td>
+        <td align="left"><a href="http://10.192.225.198/2/project/tests" target="_blank">link</a></td>
+        <td align="left">iar, gcc_arm, cw10gcc</td>
+        <td align="left">Joe Zhou</td>
+        <td align="left">---</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">B17496-05</td>
+        <td align="left">twrk70f120m</td>
+        <td align="left">build + exec</td>
+        <td align="left"><a href="http://10.192.244.35/0/project/tests" target="_blank">link</a></td>
+        <td align="left">iar</td>
+        <td align="left">CSpyBat</td>
+        <td align="left">J-link</td>
+        <td align="left">Joe Zhou</td>
+        <td align="left">---</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">B17496-06</td>
+        <td align="left">twrk60d100m</td>
+        <td align="left">build + exec</td>
+        <td align="left"><a href="http://10.192.244.59/0/project/tests" target="_blank">link</a></td>
+        <td align="left">iar</td>
+        <td align="left">CSpyBat</td>
+        <td align="left">J-link</td>
+        <td align="left">Joe Zhou</td>
+        <td align="left">---</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">b17496-10</td>
+        <td align="left">twrk40x256<br>twrk53n512<br>twrk21d50m</td>
+        <td align="left">execution machine</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">T32 ARM</td>
+        <td align="left">Lauterbach</td>
+        <td align="left">Joe Zhou</td>
+        <td align="left">---</td>
+      </tr>
+
+    </table>
+    <br>
+    <hr style="height: 1px; width: 100%;" noshade="noshade">
+
+<!--
+    <table align="center" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <big><big>Backup Test station list</big></big>
+      <tr>
+        <th>Station</th>
+        <th>Platform</th>
+        <th>Purpose</th>
+        <th>Test results</th>
+        <th>Compiler</th>
+        <th>DEBUGGER_SW</th>
+        <th>DEBUGGER_HW</th>
+        <th>Administration</th>
+        <th>PC type</th>
+      </tr>
+
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-3021</td>
+        <td align="left">twrvf65gs10_m4<br>P62891 01<br>0N02G</td>
+        <td align="left">MQX internal tests</td>
+        <td align="left"><a href="http://zcz01-3021/0/project/tests" target="_blank">link</a></td>
+        <td align="left">iar, ds5, gcc_cs</td>
+        <td align="left" colspan="2">Remote Run on zcz01-3033</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL OPTIPLEX 780</td>
+      </tr>
+      <tr bgcolor="#00FF00">
+        <td align="left">zcz01-3050</td>
+        <td align="left">twrkl25z48m<br>PKL25Z128VLK4<br>0N97F</td>
+        <td align="left">build + exec</td>
+        <td align="left"><a href="http://zcz01-3050/0/project/all/tests" target="_blank">link</a></td>
+        <td align="left">iar</td>
+        <td align="left">IAR C-SPY DEBUGGER</td>
+        <td align="left">ARM J-Link Lite FSL</td>
+        <td align="left">Michal Starecek</td>
+        <td align="left">DELL LATITUDE D630</td>
+      </tr>
+    </table>
+-->
+
+<!--
+    <table align="center" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <big><big>SW list: generic</big></big>
+      <tr>
+        <th>Name</th>
+        <th>Version</th>
+        <th>Download</th>
+        <th>Patch</th>
+        <th>Standard install path</th>
+        <th>Note</th>
+        <th>Install responsibility</th>
+      </tr>
+      <tr>
+        <td align="left">AF</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">n/a</td>
+        <td align="left">d:/vv_tools/af</td>
+        <td align="left">Automation Framework: Apache, CruiseControl, Java, PHP</td>
+        <td align="left">V&V</td>
+      </tr>
+      <tr>
+        <td align="left">Cygwin</td>
+        <td align="left">fsl-mcal-ats-cygwin-2.0.zip</td>
+        <td align="left"><a href="\\Zcz01app03\Inst_PC\Cygwin\fsl-mcal-ats-cygwin-2.0.zip" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">d:/vv_tools/cygwin</td>
+        <td align="left">Install for: All Users, Default text file type: DOS, add into local PC 'System variable:Path' to cygwin\bin directory - if uncertain request the help in installation.</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">Perl</td>
+        <td align="left">ActivePerl 5.8.0.806</td>
+        <td align="left"><a href="\\Zcz01app03\Inst_PC\Perl\ActivePerl-5.8.0.806-MSWin32-x86.msi" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">d:/vv_tools/perl</td>
+        <td align="left">n/a</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">ICDCFZ</td>
+        <td align="left">In-Circuit Debugger for MCF5xxx V1.70.0.0</td>
+        <td align="left"><a href="\\Zcz01app03\Inst_PC\Pemicro\icdcfz\icdcfz_install.exe" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">d:/vv_tools/pemicro/icdcfz</td>
+        <td align="left">n/a</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">LDRA</td>
+        <td align="left">LDRA Release_8.5.1</td>
+        <td align="left"><a href="\\zcz01vava\VaV_share\VnV_Install\LDRA\Release_8.5.1\" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">d:/vv_tools/ldra/tb_8_5_1</td>
+        <td align="left">install zip file, than copy toolsuite.ctl file into LDRA install directory, license server is: zcz01app03</td>
+        <td align="left">IMMSW</td>
+      </tr>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+        </td>
+      </tr>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <big><big>SW list: MQX 3.8.0</big></big>
+      <tr>
+        <th>Name</th>
+        <th>Version</th>
+        <th>Download</th>
+        <th>Patch</th>
+        <th>Standard install path</th>
+        <th>Note</th>
+        <th>Install responsibility</th>
+      </tr>
+      <tr>
+        <td align="left">cw10</td>
+        <td align="left">mcu_10_1</td>
+        <td align="left"><a href="\\Zcz01app03\Inst_PC\DevTech\CodeWarrior\_MCUs_v10.1\B110204_Feb4_OFFICIAL_WEB_RELEASE" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">d:/vv_tools/cw/mcu_10_1</td>
+        <td align="left">n/a</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">iar</td>
+        <td align="left">ewarm_6_10_1</td>
+        <td align="left"><a href="\\Zcz01app03\Inst_PC\IAR\ewarm-610-final" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">d:/vv_tools/iar/ewarm_6_10_1</td>
+        <td align="left">for twrk70f120m requires FlashK70Xxxx.out update</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">iar</td>
+        <td align="left">ewarm_6_21_4</td>
+        <td align="left"><a href="\\Zcz01app03\inst_pc\IAR\CD-EWARM-6214-2946" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">d:/vv_tools/iar/ewarm_6_21_4</td>
+        <td align="left">for twrk70f120m requires FlashK70Xxxx.out update</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">iar</td>
+        <td align="left">ewarm_6_30_1</td>
+        <td align="left"><a href="\\Zcz01app03\inst_pc\IAR\CD-EWARM-6301-3142" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">d:/vv_tools/iar/ewarm_6_30_1</td>
+        <td align="left">for twrk70f120m requires FlashK70Xxxx.out update</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">iar</td>
+        <td align="left">ewarm_6_30_4</td>
+        <td align="left"><a href="\\Zcz01app03\inst_pc\IAR\CD-EWARM-6304-3295" target="_blank">link</a></td>
+        <td align="left">n/a</td>
+        <td align="left">d:/vv_tools/iar/ewarm_6_30_4</td>
+        <td align="left"></td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">cw92 (TOOLCHAIN=cw)</td>
+        <td align="left">cw_9_2</td>
+        <td align="left"><a href="\\Zcz01app03\Inst_PC\DevTech\CodeWarrior\MGT\MGT_V92" target="_blank">link</a></td>
+        <td align="left">
+          1) <a href="\\Zcz01app03\Inst_PC\DevTech\CodeWarrior\MGT\MGT_V92\SP" target="_blank">link</a>
+        </td>
+        <td align="left">d:/vv_tools/cw/cw_9_2</td>
+        <td align="left">n/a</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">cw mcu 6.3</td>
+        <td align="left">cwmcu_6_3</td>
+        <td align="left">
+            <a href="\\Zcz01app03\Inst_PC\DevTech\CodeWarrior\HC08\CW_HC08_V6.3_RP" target="_blank">link</a>
+        </td>
+        <td align="left">
+            1) <a href="\\Zcz01app03\Inst_PC\DevTech\CodeWarrior\HC08\CW_HC08_V6.3_RP" target="_blank">link</a>
+        </td>
+        <td align="left">d:/vv_tools/cw/cwmcu_6_3</td>
+        <td align="left">n/a</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">cw cf 7.2</td>
+        <td align="left">cwcf_7_2</td>
+        <td align="left">
+            <a href="\\Zcz01app03\Inst_PC\DevTech\CodeWarrior\ColdFire\CW_ColdFire7x\CW_ColdFire_7_2" target="_blank">link</a>
+        </td>
+        <td align="left">
+            1) <a href="\\Zcz01app03\Inst_PC\DevTech\CodeWarrior\ColdFire\CW_ColdFire7x\CW_ColdFire_7_2" target="_blank">link</a>
+        </td>
+        <td align="left">d:/vv_tools/cw/cwcf_7_2</td>
+        <td align="left">n/a</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">cw pa 8.8</td>
+        <td align="left">cwpa_8_8</td>
+        <td align="left">
+            <a href="\\Zcz01app03\inst_pc\DevTech\CodeWarrior\PowerPC\CW_Power_Architecture\V8.8" target="_blank">link</a>
+        </td>
+        <td align="left">
+            1) <a href="\\Zcz01app03\inst_pc\DevTech\CodeWarrior\PowerPC\CW_Power_Architecture\V8.8" target="_blank">link</a>
+        </td>
+        <td align="left">d:/vv_tools/cw/cwpa_8_8</td>
+        <td align="left">n/a</td>
+        <td align="left">IMMSW</td>
+      </tr>
+      <tr>
+        <td align="left">Keil MDK 4.22a</td>
+        <td align="left">keil_mdk_4_22a</td>
+        <td align="left">
+          <a href="\\zcz01app03\Inst_PC\Keil\MDK4.22a" target="_blank">link</a>
+        </td>
+        <td align="left">
+          n/a
+        </td>
+        <td align="left">d:/vv_tools/keil/mdk_4_22a</td>
+        <td align="left">see MK__flash_algos_README.txt</td>
+        <td align="left">IMMSW</td>
+      </tr>
+
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+        </td>
+      </tr>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <big><big>BEART build support</big></big>
+      <tr>
+        <th>PLATFORM</th>
+        <th>BUILD_TYPE</th>
+        <th>TOOLCHAIN</th>
+        <th>CONFIGURATION</th>
+        <th>LOAD_TO</th>
+      </tr>
+      <tr>
+        <td align="left">twrmcf52259</td>
+        <td align="left">LIB, APP</td>
+        <td align="left">cw10</td>
+        <td align="left">DEBUG, RELEASE</td>
+        <td align="left">EXTRAM, INTFLASH</td>
+      </tr>
+      <tr>
+        <td align="left">twrk60n512</td>
+        <td align="left">LIB, APP</td>
+        <td align="left">cw10, iar</td>
+        <td align="left">DEBUG, RELEASE</td>
+        <td align="left">INTRAM, INTFLASH</td>
+      </tr>
+      <tr>
+        <td align="left">twrk60n512</td>
+        <td align="left">LIB, APP</td>
+        <td align="left">uv4</td>
+        <td align="left">DEBUG, RELEASE</td>
+        <td align="left">INTFLASH</td>
+      </tr>
+      <tr>
+        <td align="left">twrmcf51cn</td>
+        <td align="left">LIB, APP</td>
+        <td align="left">cw10</td>
+        <td align="left">DEBUG, RELEASE</td>
+        <td align="left">INTFLASH</td>
+      </tr>
+      <tr>
+        <td align="left">twrmcf54418</td>
+        <td align="left">LIB, APP</td>
+        <td align="left">cw10</td>
+        <td align="left">DEBUG, RELEASE</td>
+        <td align="left">EXTRAM, EXTFLASH</td>
+      </tr>
+      <tr>
+        <td align="left">twrmpc5125</td>
+        <td align="left">LIB, APP</td>
+        <td align="left">cw (=cw92)</td>
+        <td align="left">DEBUG, RELEASE</td>
+        <td align="left">EXTRAM, EXTFLASH</td>
+      </tr>
+      <tr>
+        <td align="left">twrpxs20</td>
+        <td align="left">LIB, APP</td>
+        <td align="left">cw10</td>
+        <td align="left">DEBUG, RELEASE</td>
+        <td align="left">INTRAM, INTFLASH (DamianN reported not functional well...14/10/2011)</td>
+      </tr>
+      <tr>
+        <td align="left">twrk70f120m</td>
+        <td align="left">LIB, APP</td>
+        <td align="left">iar</td>
+        <td align="left">DEBUG, RELEASE</td>
+        <td align="left">INTRAM, INTFLASH</td>
+      </tr>
+      <br>
+    </table>
+
+    <br>
+    <b>Params details</b><br>
+    TEST:<br>
+    -for BUILD_TYPE=LIB it is name of LIB to be build: e.g. <b>bsp</b><br>
+    -for BUILD_TYPE=APP it is name of test application to be build: e.g. <b>lwgpio_tapp_00001_twrmcf52259</b> (tests subfolder name, test name, platform)<br><br>
+    PLATFORM:<br>
+    -it is platform name: e.g. <b>twrmcf52259</b><br><br>
+    MODULE:<br>
+    -for BUILD_TYPE=LIB it is name of tests subfolder: e.g. <b>lwgpio</b>, and it defines the user_config.h that will be used for LIB build
+    (in standardize path: /tests/$(MODULE)/specific/$(PLATFORM)/user_config.h)<br>
+    -for BUILD_TYPE=APP it is name of tests subfolder: e.g. <b>lwgpio</b>, and it defines where BEART looks for test application mak-file
+    (in standardize path: /tests/$(MODULE)/make), note these mak-files are generated using the build_projects.pl script<br>
+    <br>
+    BUILD_TYPE:<br>
+    -it can be <b>LIB</b> or <b>APP</b> and defines if LIB or test application is to be build<br><br>
+    TOOLCHAIN:<br>
+    -defines what set of compiler/linker uses BEART during build, e.g. <b>cw10</b><br><br>
+    CONFIGURATION:<br>
+    -it can be <b>DEBUG</b> or <b>RELEASE</b> and defines what compiler/linker options uses BEART during build<br><br>
+    DEBUGGER:<br>
+    -defines what set of DEBUGGER_SW and DEBUGGER_HW uses BEART during load of the builded test application into the target, e.g. <b>pe</b><br><br>
+    LOAD_TO:<br>
+    -only for BUILD_TYPE=APP and it defines test application linker-command file, and then also where BEART attempts load the test
+    application into the target: e.g. <b>INTFLASH</b><br><br>
+    PRINT_DETAILS:<br>
+    -only for BUILD_TYPE=APP, it can be <b>ON</b> or <b>OFF</b> and it enables that EUNIT prints assertion details using <b>printf</b> function,
+    currently these details consist of <b>line_num</b> and <b>PASSED/FAILED</b> information<br><br>
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+        </td>
+      </tr>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <big><big>BEART load/run support</big></big>
+      <tr>
+        <th>PLATFORM</th>
+        <th>DEBUGGER</th>
+        <th>LOAD_TO</th>
+        <th>DEBUGGER_SW</th>
+        <th>DEBUGGER_HW</th>
+        <th>DEBUG_APP</th>
+      </tr>
+      <tr>
+        <td align="left">twrmcf52259</td>
+        <td align="left">pe</td>
+        <td align="left">EXTRAM</td>
+        <td align="left">P&E ICDCFW</td>
+        <td align="left">P&E USB Coldfire Multilink</td>
+        <td align="left">TBD</td>
+      </tr>
+      <tr>
+        <td align="left">twrk60n512</td>
+        <td align="left">cw10</td>
+        <td align="left">INTRAM, INTFLASH</td>
+        <td align="left">cw10</td>
+        <td align="left">OSBDM(miniUSB)</td>
+        <td align="left">TBD</td>
+      </tr>
+      <tr>
+        <td align="left">twrk60n512</td>
+        <td align="left">iar</td>
+        <td align="left">INTRAM</td>
+        <td align="left">IAR C-SPY DEBUGGER</td>
+        <td align="left">ARM J-Link Lite FSL</td>
+        <td align="left">TBD</td>
+      </tr>
+      <tr>
+        <td align="left">twrk60n512</td>
+        <td align="left">uv4</td>
+        <td align="left">INTFLASH</td>
+        <td align="left">uv4</td>
+        <td align="left">ulink-me</td>
+        <td align="left">TBD</td>
+      </tr>
+      <tr>
+        <td align="left">twrmcf51cn</td>
+        <td align="left">cw10</td>
+        <td align="left">INTFLASH</td>
+        <td align="left">cw10</td>
+        <td align="left">P&E USB Multilink Interface(RS08, HCS08, HCS12X, ColdFireV1)</td>
+        <td align="left">TBD</td>
+      </tr>
+      <tr>
+        <td align="left">twrmcf54418</td>
+        <td align="left">cw10</td>
+        <td align="left">EXTRAM</td>
+        <td align="left">cw10</td>
+        <td align="left">P&E USB Coldfire Multilink</td>
+        <td align="left">TBD</td>
+      </tr>
+      <tr>
+        <td align="left">twrmpc5125</td>
+        <td align="left">cw92</td>
+        <td align="left">EXTRAM</td>
+        <td align="left">cw92</td>
+        <td align="left">CodeWarrior USB TAP</td>
+        <td align="left">TBD</td>
+      </tr>
+      <tr>
+        <td align="left">twrpxs20</td>
+        <td align="left">lauterbach</td>
+        <td align="left">INTFLASH</td>
+        <td align="left">T32 MPC</td>
+        <td align="left">T32 Debugger</td>
+        <td align="left">TBD</td>
+      </tr>
+      <tr>
+        <td align="left">twrk70f120m</td>
+        <td align="left">iar</td>
+        <td align="left">INTRAM, INTFLASH (to be validated)</td>
+        <td align="left">IAR C-SPY DEBUGGER</td>
+        <td align="left">ARM J-Link Lite FSL</td>
+        <td align="left">TBD</td>
+      </tr>
+      <br>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+        </td>
+      </tr>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <big><big>ClearCase rules</big></big>
+      <tr>
+        <th>File name</th>
+        <th>Purpose</th>
+        <th>Download</th>
+        <th>Note</th>
+      </tr>
+      <tr>
+        <td align="left">zcz01-xxxx_view_main_latest.txt</td>
+        <td align="left">1) test station cc-views<br>
+                         2) local test developer cc-views<br>
+                         <br>
+                         Note: development runs on <b>/main/LATEST</b></td>
+        <td align="left"><a href="templates/cspec/zcz01-xxxx_view_main_latest.txt" target="_blank">link</a></td>
+        <td align="left">This template can be used also for minor modifications within test station cc-views while use
+                         service account (<b>zcz01vav01-svc</b>), then it is necessary to place comment while do
+                         check-in/add-to-source-control operations in a form of: <b>"core_id: name"</b> (this will introduce
+                         backward identification who caused the modification while use service account)<br><br>
+                         Template shall be used <b>without any modification</b>.
+                         </td>
+      </tr>
+      <tr>
+        <td align="left">zcz01-xxxx_view_main_latest_cr_template.txt</td>
+        <td align="left">1) test station cc-views (test development done directly on test station)<br>
+                         2) local developer cc-views (recommended for major modifications, new development)<br>
+                         <br>
+                         Note: development runs on <b>/devel_[XXXXXXXX]_[comment]</b></td>
+        <td align="left"><a href="templates/cspec/zcz01-xxxx_view_main_latest_cr_template.txt" target="_blank">link</a></td>
+        <td align="left">This template can be used also for major modifications within test station cc-views while use
+                         service account (<b>zcz01vav01-svc</b>)<br><br>
+                         Template needs replaced these strings before usage:<br>
+                         1) <b>[XXXXXXXX]</b> = clearquest CR number, e.g.: <b>00141959</b><br>
+                         2) <b>[comment]</b> = describes shortly purpose of CQ CR(change request), e.g.: <b>integration_mfs_test_apps</b> (lower-cases only!)<br>
+                         </td>
+      </tr>
+      <br>
+      <b>First some useful tips:</b><br>
+      Q1) How do I find all view private files in my view?<br>
+      A1) use cmd-line: "cleartool ls -r -view_only"<br>
+      Q2) How do I find hijacked files in my snapshot view?<br>
+      A2) In ClearCase Explorer right click on the view name and select "Find Modified Files"<br><br>
+
+      <b>Rules while work in the test station cc-views:</b><br><br>
+      1) do not use hijack strategy of file modifications (rather use for modification "check-out"/"undo check-out" strategy)<br>
+      2) do not leave any private files within cc-views (they are difficult to locate, and it is expected
+      that test station cc-views can be updated from scratch at any time, and then all private files are lost forever!)<br>
+      3) check-out/add-to-source-control operations are allowed even on /main/LATEST (but then it is required to add in
+         change comment window the originator of the change), but for more complicated changes
+         it is required to work under <b>/devel_[XXXXXXXX]_[comment]</b> branch<br>
+      5) do not leave any check-outs on /main/LATEST over-night<br>
+      6) test station snapshot cc-view are usually created under <b>"D:\cc\zcz01-xxxx_view_main_latest"</b> where <b>xxxx</b> shall be replaced by actual
+         test station number, e.g.: <b>"D:\cc\zcz01-1110_view_main_latest"</b><br><br>
+    <big><big>ClearCase CSPEC templates</big></big>
+    <br><br>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+        </td>
+      </tr>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <big><big>ClearCase labels history</big></big>
+      <tr>
+        <th>Product release</th>
+        <th>Product date</th>
+        <th>Product label</th>
+        <th>Testapp label</th>
+        <th>Note</th>
+      </tr>
+      <tr>
+        <td align="left">MQX 3.7.0</td>
+        <td align="left">08.04.2011: 19:43</td>
+        <td align="left">MQX_3_7_0_REL0</td>
+        <td align="left">MQXTESTAPP_1_0_1</td>
+        <td align="left">n/a</td>
+      </tr>
+      <tr>
+        <td align="left">MQX 3.8.0 EAR2</td>
+        <td align="left">01.07.2011: 17:08</td>
+        <td align="left">MQX_3_8_0_EAR2</td>
+        <td align="left">MQXTESTAPP_1_0_2</td>
+        <td align="left">n/a</td>
+      </tr>
+      <tr>
+        <td align="left">MQX 3.8.0 EAR3</td>
+        <td align="left">03.08.2011: 19:30</td>
+        <td align="left">MQX_3_8_0_EAR3</td>
+        <td align="left">MQXTESTAPP_1_0_3</td>
+        <td align="left">n/a</td>
+      </tr>
+      <tr>
+        <td align="left">MQX 3.8.0 EAR4</td>
+        <td align="left">02.09.2011: 17:00</td>
+        <td align="left">MQX_3_8_0_EAR4</td>
+        <td align="left">MQXTESTAPP_1_0_4</td>
+        <td align="left">n/a</td>
+      </tr>
+      <tr>
+        <td align="left">MQX 3.8.0 BETA1</td>
+        <td align="left">14.10.2011: 19:55</td>
+        <td align="left">MQX_3_8_0_BETA1</td>
+        <td align="left">MQXTESTAPP_1_0_5</td>
+        <td align="left">n/a</td>
+      </tr>
+      <tr>
+        <td align="left">MQX 3.8.0 BETA2</td>
+        <td align="left">04.11.2011: 20:42</td>
+        <td align="left">MQX_3_8_0_BETA2</td>
+        <td align="left">MQXTESTAPP_1_0_6</td>
+        <td align="left">n/a</td>
+      </tr>
+      <tr>
+        <td align="left">MQX 3.8.0 BETA3</td>
+        <td align="left">05.12.2011: 16:35</td>
+        <td align="left">MQX_3_8_0_BETA3</td>
+        <td align="left">MQXTESTAPP_1_0_7</td>
+        <td align="left">n/a</td>
+      </tr>
+      <tr>
+        <td align="left">MQX 3.8.0 FINAL</td>
+        <td align="left">16.12.2011: 19:40</td>
+        <td align="left">MQX_3_8_0_REL1</td>
+        <td align="left">MQXTESTAPP_1_0_8</td>
+        <td align="left">n/a</td>
+      </tr>
+      <tr>
+        <td align="left">TBD</td>
+        <td align="left">TBD</td>
+        <td align="left">TBD</td>
+        <td align="left">MQXTESTAPP_1_0_9</td>
+        <td align="left">current CQ target baseline for TEST_APPLICATIONS development</td>
+      </tr>
+      <tr>
+        <td align="left">TBD</td>
+        <td align="left">TBD</td>
+        <td align="left">TBD</td>
+        <td align="left">MQXTESTAPP_1_0_10</td>
+        <td align="left">future CQ target baseline for TEST_APPLICATIONS development</td>
+      </tr>
+      <br>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+        </td>
+      </tr>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+      <big><big>ClearCase labels history (exports)</big></big>
+      <tr>
+        <th>Product release</th>
+        <th>Export date</th>
+        <th>Export label</th>
+        <th>Testapp label</th>
+        <th>Note</th>
+      </tr>
+      <tr>
+        <td align="left">n/a</td>
+        <td align="left">10.10.2011: 17:00<BR>(embedded-access)</td>
+        <td align="left">MQXTESTAPP_EAC_EXPORT_1_0_0</td>
+        <td align="left">n/a</td>
+        <td align="left">
+         Baseline that marks existing state of CC elements:
+         element /MSGSW/MQX/src/_generic_new/gen_make.pl /main/LATEST
+         element /MSGSW/MQX/src/_generic_new/_gen_make/... /main/LATEST
+         element /MSGSW/MQX/src/_generic_new/app/test/... /main/LATEST
+         element /MSGSW/MQX/src/tests/... /main/LATEST
+        </td>
+      </tr>
+      <tr>
+        <td align="left">n/a</td>
+        <td align="left">11.11.2011: 12:00<BR>(embedded-access, radar)</td>
+        <td align="left">MQXTESTAPP_EAC_EXPORT_1_0_1</td>
+        <td align="left">n/a</td>
+        <td align="left">
+         Baseline that marks existing state of CC elements:
+         element /MSGSW/MQX/src/_generic_new/gen_make.pl /main/LATEST
+         element /MSGSW/MQX/src/_generic_new/_gen_make/... /main/LATEST
+         element /MSGSW/MQX/src/_generic_new/app/test/... /main/LATEST
+         element /MSGSW/MQX/src/tests/... /main/LATEST
+        </td>
+      </tr>
+      <br>
+    </table>
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+        </td>
+      </tr>
+    </table>
+
+    <big><big>ClearQuest rules</big></big>
+    <br>
+    <br>
+    <b>IMMSW test CRs contain:</b><br>
+    -AffectedParts contains "TEST_APPLICATIONS"<br>
+    -ParentBin = "MQX"<br>
+    -CR Headline starts with "[TESTAPP]..."<br>
+    <br>
+    <b>V&V team CRs contain:</b><br>
+    -ParentBin = "SOVVA" or "VV-OVERHEAD"<br>
+    -ConfigsAffected contains "MQX"<br>
+    <br>
+    <b>CRs initiated/entered during test application development:</b><br>
+    -TrackTags = "MQX_TEST_APP_DEV_ENTRY", TrackTag that marks/identifies CRs initiated/entered during test application development towards MQX sources by test developers.<br>
+    -Links/Related CRs: add link (is of interest to) to CR in what the test application development runs<br>
+    <br>
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+        </td>
+      </tr>
+    </table>
+
+    <big><big>MQXERR maillist</big></big>
+    <br>
+    <br>
+    Each test station sends result of the over-night test execution results to the internal maillist MQXERR. You
+    can subscribe to this maillist at this <a href="http://maillist.freescale.net/">link</a>
+    <br>
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+        </td>
+      </tr>
+    </table>
+
+    <big><big>MQX Tests and Infrastructure documentation</big></big>
+    <br>
+    <br>
+    Introductory presentation about MQX tests and infrastructure can be found in CC at this <a href="../../../doc/mqx_tests_infra.ppt" target="_blank">link</a>.
+    <br>
+
+    <table align="center" style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+      <tr>
+        <td align="center">
+          <hr style="height: 1px; width: 100%;" noshade="noshade">
+          <br><b>Freescale Internal Use Only</b>
+          <br>For comments or problem reports contact:
+          <a href="mailto:michal.starecek@freescale.com">Michal Starecek</a>
+          <br>Last update on: 03/01/2012
+        </td>
+      </tr>
+    </table>
+-->
+  </body>
+</html>

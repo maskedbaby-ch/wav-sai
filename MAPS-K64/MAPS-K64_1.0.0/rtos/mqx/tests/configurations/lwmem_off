@@ -1,0 +1,8 @@
+#undef  MQX_USE_MEM
+#define MQX_USE_MEM             1
+
+#undef  MQX_USE_LWMEM
+#define MQX_USE_LWMEM           0
+
+#undef  MQX_USE_LWMEM_ALLOCATOR
+#define MQX_USE_LWMEM_ALLOCATOR 0

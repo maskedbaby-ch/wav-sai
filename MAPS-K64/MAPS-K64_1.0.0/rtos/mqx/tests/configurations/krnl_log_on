@@ -1,0 +1,2 @@
+#undef  MQX_KERNEL_LOGGING
+#define MQX_KERNEL_LOGGING  1

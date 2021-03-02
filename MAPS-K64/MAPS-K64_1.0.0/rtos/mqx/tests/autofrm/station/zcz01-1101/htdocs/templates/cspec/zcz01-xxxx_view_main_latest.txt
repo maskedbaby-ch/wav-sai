@@ -1,0 +1,24 @@
+element * CHECKEDOUT
+
+# do not load these 'vnv_dist' root folders
+element \vnv_dist\lost+found -none
+
+# get recent MQX development changes
+
+# get recent VnV development changes
+
+# get VnV BEART
+element /vnv_dist/... BEART_1.4.26 -nocheckout
+
+# get VnV MAF
+element /vnv_dist/... MAF_1.1.17 -nocheckout
+
+# get the rest 
+element * /main/LATEST               -nocheckout
+
+load \vnv_dist
+load \arfrm
+
+load \MSGSW\MQX\doc
+load \MSGSW\MQX\install
+load \MSGSW\MQX\src
