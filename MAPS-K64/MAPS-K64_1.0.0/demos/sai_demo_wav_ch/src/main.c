@@ -96,7 +96,7 @@ float32_t g_dspInput[AUDIO_BUFFER_BLOCK_SIZE];
  ******************************************************************************/
 void pin_setup(void)
 {
-    configure_i2s_pins(0);
+    configure_i2s_pins(0);//
 }
 
 void sdhc_card_detection(bool inserted)
