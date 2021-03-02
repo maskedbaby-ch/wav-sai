@@ -1,0 +1,66 @@
+{% spaceless %}
+COVERAGE_IO_TYPE: VCAST_COVERAGE_IO_BUFFERED
+VCAST_COLLAPSE_STD_HEADERS: COLLAPSE_NON_SEARCH_HEADERS
+SBF_LOC_NONMEMBER_IN_NSP: DECL_NAMESPACE
+SBF_LOC_MEMBER_IN_NSP: DECL_NAMESPACE
+SBF_LOC_MEMBER_OUTSIDE_NSP: DECL_NAMESPACE
+SBF_LOC_NONMEMBER_OUTSIDE_NSP: DECL_NAMESPACE
+VCAST_INST_FILE_MAX_LINES: 0
+TARGET_VARIANT: HOST
+SOURCE_EXTENSION: .c
+{% if toolchain == 'iar' %}
+C_COMPILER_TAG: IAR_ARM-CORTEX_6X_JLINK
+C_COMPILER_HIERARCHY_STRING: IAR_ARM-CORTEX 6.x_JLINK_C
+C_COMPILE_CMD_NAME: iccarm
+C_PREPROCESS_CMD: {{ toolchain_dir }}/arm/bin/iccarm.exe --preprocess=nlc .
+C_COMPILE_CMD: {{ toolchain_dir }}/arm/bin/iccarm.exe
+C_EDG_FLAGS: -w --c --iar --iar_version=arm
+{% elif toolchain == 'uv4' %}
+C_COMPILER_TAG: Keil_ARM_LPC1758_42_SIM_C
+C_COMPILER_HIERARCHY_STRING: Keil_ARM_LPC1758_uVision4_4.2_Simulator_C
+C_COMPILE_CMD_NAME: armcc
+C_PREPROCESS_CMD: {{ toolchain_dir }}/ARM/ARMCC/bin/armcc.exe -E
+C_COMPILE_CMD: {{ toolchain_dir }}/ARM/ARMCC/bin/armcc.exe
+C_EDG_FLAGS: -w --c --arm --keil_version=arm --wchar_t_keyword
+{% elif toolchain == 'cw10gcc' %}
+C_COMPILER_TAG: GNU_C_47
+C_COMPILER_HIERARCHY_STRING: GNU Native_4.7_C
+C_COMPILE_CMD_NAME: GNU C 4.7
+C_PREPROCESS_CMD: {{ toolchain_dir }}/Cross_Tools/arm-none-eabi-gcc-4_7_3/bin/arm-none-eabi-gcc.exe -E
+C_COMPILE_CMD: {{ toolchain_dir }}/Cross_Tools/arm-none-eabi-gcc-4_7_3/bin/arm-none-eabi-gcc.exe
+C_EDG_FLAGS: -w --gcc --gnu_version 40700
+{% elif toolchain == 'gcc_cs' %}
+C_COMPILER_TAG: GNU_C_47
+C_COMPILER_HIERARCHY_STRING: GNU Native_4.7_C
+C_COMPILE_CMD_NAME: GNU C 4.7
+C_PREPROCESS_CMD: {{ toolchain_dir }}/bin/arm-none-eabi-gcc.exe -E
+C_COMPILE_CMD: {{ toolchain_dir }}/bin/arm-none-eabi-gcc.exe
+C_EDG_FLAGS: -w --gcc --gnu_version 40700
+{% endif %}
+C_PREPROCESS_FILE: ?.i
+C_DEFINE_LIST: {% for ccdef in ccdefines %}{{ ccdef }} {% endfor %}
+C_COMPILE_CMD_FLAG: {% for ccflag in ccflags %}{{ ccflag }} {% endfor %}
+C_COMPILE_EXCLUDE_FLAGS: -o**
+C_MAKE_ALL_CMD: <specify build command>
+C_SYNTAX_CHECK_FLAG: {% for ccflag in ccflags %}{{ ccflag }} {% endfor %}
+EXECUTABLE_EXTENSION: 
+VCAST_ENVIRONMENT_FILES: 
+VCAST_ASSEMBLY_FILE_EXTENSIONS: s S
+VCAST_C_FILE_EXTENSIONS: c C
+VCAST_CPP_FILE_EXTENSIONS: cpp CPP
+VCAST_HEADER_FILE_EXTENSIONS: h H
+SUBSTITUTE_CODE_FOR_C_FILE: FALSE
+VCAST_AUTO_CLEAR_TEST_USER_CODE: FALSE
+VCAST_COMMAND_LINE_DEBUGGER: FALSE
+VCAST_COVERAGE_FOR_HEADERS: FALSE
+VCAST_COMPILER_SUPPORTS_CPP_CASTS: FALSE
+VCAST_FORCE_ELAB_TYPE_SPEC: TRUE
+VCAST_TORNADO_CONSTRUCTOR_CALL_FILE: FALSE
+VCAST_USE_BUFFERED_ASCII_DATA: TRUE
+VCAST_MAX_CAPTURED_ASCII_DATA: 4000
+VCAST_MAX_COVERED_SUBPROGRAMS: 2000
+VCAST_USE_STATIC_MEMORY: TRUE
+VCAST_MICROSOFT_LONG_LONG: FALSE
+{% for include in include_paths %}
+LIBRARY_INCLUDE_DIR: {{ include }}{% endfor %}
+{% endspaceless %}

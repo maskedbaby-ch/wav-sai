@@ -1,0 +1,175 @@
+[% SWITCH platform                           -%]
+[%   CASE 'twrvf65gs10_a5'                   -%]
+[%     remote_platform = 'twrvf65gs10_m4'    -%]
+[%   CASE 'twrvf65gs10_m4'                   -%]
+[%     remote_platform = 'twrvf65gs10_a5'    -%]
+[%   CASE 'vybrid_autoevb_a5'                -%]
+[%     remote_platform = 'vybrid_autoevb_m4' -%]
+[%   CASE 'vybrid_autoevb_m4'                -%]
+[%     remote_platform = 'vybrid_autoevb_a5' -%]
+[% END                                       -%]
+[% SWITCH target                -%]
+[%   CASE 'INTRAM'              -%]
+[%     remote_target = 'DDR'    -%]
+[%   CASE 'DDR'                 -%]
+[%     remote_target = 'INTRAM' -%]
+[% END                          -%]
+<cruisecontrol>
+    <property name="ts_class" value="[% class %]"/>
+    <property name="compiler" value="[% tool %]"/>
+    <property name="project_configuration" value="[% config %]"/>
+    <property name="project_platform" value="[% platform %]"/>
+    <property name="project_module" value="mcc"/>
+    <property name="project_loadto" value="[% target %]"/>
+    <property name="project_compiler" value="${project_platform}_${compiler}_${project_configuration}"/>
+    <property name="project_name" value="ar_${ts_class}_mcc_${project_compiler}"/>
+    <project name="${project_name}" buildafterfailed="no">
+      <listeners>
+        <currentbuildstatuslistener file="${cruise_dir}/logs/${project.name}/status.txt"/>
+      </listeners>
+      <schedule interval="[% time %]">
+      <composite>
+        <!-- Start check point system -->
+        <exec command="python" args="ckp.py --output ${cruise_dir}/logs/${project.name} --start --stages remote_lib remote_app prepare test" workingdir="${arfrm_dir}/testfrm/tools/af" />
+        <!-- Remove old test reports  -->
+        <exec command="rm" args="-f ${cruise_dir}/projects/${project.name}/target/test-results/*.xml"/>
+
+[% FOREACH alt_config IN alt_configs -%]
+[% local_conf_name = module _ '_' _ platform _ '_' _ tool _ '_' _ config _ '_' _ alt_config _ '_' _ mcc -%]
+        <!-- Configure the Test Builder -->
+        <exec command="make" args="config CFG_MAK_FILE=local_config_[% local_conf_name %].mak
+          CNFG=[% alt_config %]
+          PS=${PS}
+          PS_IP=${PS_IP}
+          PS_ID=${PS_ID}
+          RRUN=${RRun}
+          RRUN_IP=${RRun_IP}
+          RRUN_PORT=${RRun_port}
+          RRUN_DEVICE=${RRun_device}
+          DEBUGGER=${debugger}
+          FRM_DIR=${frm_dir}
+          DEV_DIR=${dev_dir}
+          IARARM_DIR=${iar_dir}
+          UV4_DIR=${uv4_dir}
+          DS5_DIR=${ds5_dir}
+          GCC_CS_DIR=${gcc_cs_dir}
+          GCC_ARM_DIR=${gcc_arm_dir}
+          CW10GCC_DIR=${cw10gcc_dir}
+          T32_DIR=${t32_dir}
+          OUTPUT_DIR=${cruise_dir}/projects/${project_name}
+          CONFIGURATION=${project_configuration}
+          TOOLCHAIN=${compiler}
+          PLATFORM=[% remote_platform %]
+          CCDEF=-DMCC_TEST_APP=0
+          MODULE=mcc"
+        workingdir="${frm_dir}/testfrm/make"/>
+
+        <!-- clean LIBs -->
+[% FOREACH lib IN libs -%]
+        <exec command="make" args="clean_[% lib %] BUILD_TYPE=LIB LOCAL_CONF=[% local_conf_name %] CFG_MAK_FILE=${dev_dir}/tests/autofrm/beart/config_beart.mak" workingdir="${frm_dir}/testfrm/make" />
+[% END -%]
+        <!-- start prepare libs operations -->
+        <!-- Create lib .mak -->
+        <exec command="perl" args="${dev_dir}/generator_new/gutils/mqx_beart.pl file=${dev_dir}/generator_new/records/mqx_records/tests/[% remote_platform %].yml type=library tool=[% tool %] config=[% config %] alt_config=[% alt_config %]" workingdir="${frm_dir}/testfrm/make" />
+        <!-- Create lib .bat files used in post-build action-->
+        <exec command="perl" args="${dev_dir}/generator_new/gutils/mqx_batch.pl file=${dev_dir}/generator_new/records/mqx_records/tests/[% remote_platform %].yml" workingdir="${frm_dir}/testfrm/make" />
+
+        <!-- build LIBs -->
+[% FOREACH lib IN libs -%]
+        <exec command="make" args="-j[% IF (tool == 'ds5' || tool == 'uv4') %]2[% ELSE %]10[% END %] build_[% lib %] BUILD_TYPE=LIB LOCAL_CONF=[% local_conf_name %] CFG_MAK_FILE=${dev_dir}/tests/autofrm/beart/config_beart.mak" workingdir="${frm_dir}/testfrm/make" />
+[% END -%]
+
+        <!-- call checkpoint: build libs completed -->
+        <exec command="python" args="ckp.py --output ${cruise_dir}/logs/${project.name}" workingdir="${arfrm_dir}/testfrm/tools/af" />
+
+        <!-- prepare tests -->
+        <!-- Create tests .mak file - needed before cleaning tests due to non-existing .mak for MAKEFILE when run for first time-->
+        <exec command="perl" args="${dev_dir}/generator_new/gutils/mqx_beart.pl file=${dev_dir}/generator_new/records/mqx_records/tests/[% remote_platform %].yml type=application section=test-mcc tool=[% tool %] config=[% config %]" workingdir="${frm_dir}/testfrm/make" />
+
+        <!-- Clean/Parse/Build tests -->
+[% FOREACH test IN tests.sort -%]
+[%    full_test_name = module _ '_' _ test _ '_' _ remote_platform _ '_' _ tool _ '_' _ config _ '_' _ alt_config -%]
+        <exec command="make" args="clean TEST=[% full_test_name %] BUILD_TYPE=APP LOAD_TO=[% remote_target %] LOCAL_CONF=[% local_conf_name %] CFG_MAK_FILE=${dev_dir}/tests/autofrm/beart/config_beart.mak" workingdir="${frm_dir}/testfrm/make" />
+        <exec command="make" args="parse TEST=[% full_test_name %] BUILD_TYPE=APP LOAD_TO=[% remote_target %] LOCAL_CONF=[% local_conf_name %] CFG_MAK_FILE=${dev_dir}/tests/autofrm/beart/config_beart.mak" workingdir="${frm_dir}/testfrm/make" />
+        <exec command="make" args="build TEST=[% full_test_name %] BUILD_TYPE=APP LOAD_TO=[% remote_target %] LOCAL_CONF=[% local_conf_name %] CFG_MAK_FILE=${dev_dir}/tests/autofrm/beart/config_beart.mak" workingdir="${frm_dir}/testfrm/make" />
+[%   END -%]
+
+[% END -%]
+
+        <!-- call checkpoint: build remote apps completed -->
+        <exec command="python" args="ckp.py --output ${cruise_dir}/logs/${project.name}" workingdir="${arfrm_dir}/testfrm/tools/af" />
+
+[% FOREACH alt_config IN alt_configs -%]
+[% local_conf_name = module _ '_' _ platform _ '_' _ tool _ '_' _ config _ '_' _ alt_config _ '_' _ mcc -%]
+        <!-- Configure the Test Builder -->
+        <exec command="make" args="config CFG_MAK_FILE=local_config_[% local_conf_name %].mak
+          CNFG=[% alt_config %]
+          PS=${PS}
+          PS_IP=${PS_IP}
+          PS_ID=${PS_ID}
+          RRUN=${RRun}
+          RRUN_IP=${RRun_IP}
+          RRUN_PORT=${RRun_port}
+          RRUN_DEVICE=${RRun_device}
+          DEBUGGER=${debugger}
+          FRM_DIR=${frm_dir}
+          DEV_DIR=${dev_dir}
+          IARARM_DIR=${iar_dir}
+          UV4_DIR=${uv4_dir}
+          DS5_DIR=${ds5_dir}
+          GCC_CS_DIR=${gcc_cs_dir}
+          GCC_ARM_DIR=${gcc_arm_dir}
+          GCC_CW_DIR=${gcc_cw_dir}
+          T32_DIR=${t32_dir}
+          OUTPUT_DIR=${cruise_dir}/projects/${project_name}
+          CONFIGURATION=${project_configuration}
+          TOOLCHAIN=${compiler}
+          PLATFORM=[% platform %]
+          CCDEF=-DMCC_TEST_APP=1
+          TEST_PARAMS=@PLATFORM=[% platform %],REMOTE_PLATFORM=[% remote_platform %]
+          ALTERNATE_CMM_SCRIPT=${dev_dir}/tests/mcc/specific/[% platform %]/custom_loader.cmm.m4
+          LOAD_TO=[% target %]
+          BUILD_TYPE=APP
+          MODULE=mcc"
+        workingdir="${frm_dir}/testfrm/make"/>
+        <!-- prepare tests -->
+        <!-- Create tests .mak file - needed before cleaning tests due to non-existing .mak for MAKEFILE when run for first time-->
+        <exec command="perl" args="${dev_dir}/generator_new/gutils/mqx_beart.pl file=${dev_dir}/generator_new/records/mqx_records/tests/[% platform %].yml type=application section=test-mcc tool=[% tool %] config=[% config %]" workingdir="${frm_dir}/testfrm/make" />
+
+        <!-- call checkpoint: test prepare completed -->
+        <exec command="python" args="ckp.py --output ${cruise_dir}/logs/${project.name}" workingdir="${arfrm_dir}/testfrm/tools/af" />
+
+        <!-- Clean tests -->
+[%  FOREACH test IN tests.sort -%]
+[%    full_test_name = module _ '_' _ test _ '_' _ platform _ '_' _ tool _ '_' _ config _ '_' _ alt_config -%]
+[%    full_remote_name = module _ '_' _ test _ '_' _ remote_platform _ '_' _ tool _ '_' _ config _ '_' _ alt_config -%]
+        <exec command="python" args="${arfrm_dir}/testfrm/tools/af/beart.py --test [% test %]_[% alt_config %] -t clean  -o ${cruise_dir}/logs/${project.name} -c &quot;make clean  TEST=[% full_test_name %] LOCAL_CONF=[% local_conf_name %] CFG_OUT_FILES=${cruise_dir}/projects/${project_name}/target/build/[% full_remote_name %]/out/[% full_remote_name %].[% ext %] CFG_MAK_FILE=${dev_dir}/tests/autofrm/beart/config_beart.mak&quot;" workingdir="${frm_dir}/testfrm/make" />
+        <exec command="python" args="${arfrm_dir}/testfrm/tools/af/beart.py --test [% test %]_[% alt_config %] -t parse  -o ${cruise_dir}/logs/${project.name} -c &quot;make parse  TEST=[% full_test_name %] LOCAL_CONF=[% local_conf_name %] CFG_OUT_FILES=${cruise_dir}/projects/${project_name}/target/build/[% full_remote_name %]/out/[% full_remote_name %].[% ext %] CFG_MAK_FILE=${dev_dir}/tests/autofrm/beart/config_beart.mak&quot;" workingdir="${frm_dir}/testfrm/make" />
+        <exec command="python" args="${arfrm_dir}/testfrm/tools/af/beart.py --test [% test %]_[% alt_config %] -t build  -o ${cruise_dir}/logs/${project.name} -c &quot;make build  TEST=[% full_test_name %] LOCAL_CONF=[% local_conf_name %] CFG_OUT_FILES=${cruise_dir}/projects/${project_name}/target/build/[% full_remote_name %]/out/[% full_remote_name %].[% ext %] CFG_MAK_FILE=${dev_dir}/tests/autofrm/beart/config_beart.mak&quot;" workingdir="${frm_dir}/testfrm/make" />
+[%    IF build_only != "on" -%]
+        <exec command="python" args="${arfrm_dir}/testfrm/tools/af/beart.py --test [% test %]_[% alt_config %] -t run    -o ${cruise_dir}/logs/${project.name} -c &quot;make run    TEST=[% full_test_name %] LOCAL_CONF=[% local_conf_name %] CFG_OUT_FILES=${cruise_dir}/projects/${project_name}/target/build/[% full_remote_name %]/out/[% full_remote_name %].[% ext %] CFG_MAK_FILE=${dev_dir}/tests/autofrm/beart/config_beart.mak&quot;" workingdir="${frm_dir}/testfrm/make" />
+        <exec command="python" args="${arfrm_dir}/testfrm/tools/af/beart.py --test [% test %]_[% alt_config %] -t report -o ${cruise_dir}/logs/${project.name} -c &quot;make report TEST=[% full_test_name %] LOCAL_CONF=[% local_conf_name %] CFG_OUT_FILES=${cruise_dir}/projects/${project_name}/target/build/[% full_remote_name %]/out/[% full_remote_name %].[% ext %] CFG_MAK_FILE=${dev_dir}/tests/autofrm/beart/config_beart.mak&quot;" workingdir="${frm_dir}/testfrm/make" />
+[%    END -%]
+[%  END -%]
+
+[% END %]
+        <!-- call checkpoint: test sequnce completed -->
+        <exec command="python" args="ckp.py --output ${cruise_dir}/logs/${project.name}" workingdir="${arfrm_dir}/testfrm/tools/af" />
+
+        </composite>
+    </schedule>
+    <log dir="${cruise_dir}/logs/${project.name}"></log>
+    <publishers>
+[% IF reporter == "on" -%]
+      <execute command='python ${dev_dir}/tests/autofrm/utils/board/result_send.py -s --ip ${reporter_ip} --port ${reporter_port} --platform [% platform %] --compiler [% tool %] --config [% config %] --target [% target %] --class [% class %] --module [% module %] --apps[% FOREACH test IN tests.sort %] [% test %][% END %] --xml_dir "${cruise_dir}/projects/${project_name}/target/test-results"'/>
+[% END -%]
+[% IF reporter2 == "on" -%]
+      <execute command='python ${dev_dir}/tests/autofrm/utils/board2/send.py -s --ip ${reporter2_ip} --port ${reporter2_port} --platform [% platform %] --compiler [% tool %] --config [% config %] --target [% target %] --class [% class %] --module [% module %] --apps[% FOREACH test IN tests.sort %] [% test %][% END %] --xml_dir "${cruise_dir}/projects/${project_name}/target/test-results"'/>
+[% END -%]
+      <execute command='python ${arfrm_dir}/testfrm/tools/af/trg.py -i "${cruise_dir}/projects/${project.name}" -o "${cruise_dir}/logs/${project.name}/downloads" -l "${cruise_dir}/logs/${project.name}" -v "${dev_dir}" -p "${tresos_dir}" --project "${project_full_name}" -t "${test_station}" --derivative "${derivative}"'/>
+      <execute command="python ${arfrm_dir}/testfrm/tools/af/ckp.py --output ${cruise_dir}/logs/${project.name} --end"/>
+      <artifactspublisher dest="${cruise_dir}/artifacts/${project.name}" dir="${cruise_dir}/projects/${project.name}"/>
+      <artifactspublisher dest="${cruise_dir}/artifacts/${project.name}" dir="${cruise_dir}/logs/${project.name}"/>
+    </publishers>
+  </project>
+</cruisecontrol>

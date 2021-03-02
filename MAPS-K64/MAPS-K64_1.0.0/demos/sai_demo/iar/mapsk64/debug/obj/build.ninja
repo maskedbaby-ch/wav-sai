@@ -1,0 +1,55 @@
+#Generating source browse information for project sai_demo
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build gpio_pins.pbi : index gpio_pins.xcl
+build hardware_init.pbi : index hardware_init.xcl
+build pin_mux.pbi : index pin_mux.xcl
+build fsl_wm8960_driver.pbi : index fsl_wm8960_driver.xcl
+build diskio.pbi : index diskio.xcl
+build ff.pbi : index ff.xcl
+build ffsystem.pbi : index ffsystem.xcl
+build ffunicode.pbi : index ffunicode.xcl
+build fsl_sd_disk.pbi : index fsl_sd_disk.xcl
+build fsl_edma_irq.pbi : index fsl_edma_irq.xcl
+build fsl_i2c_irq.pbi : index fsl_i2c_irq.xcl
+build fsl_sai_irq.pbi : index fsl_sai_irq.xcl
+build fsl_sdmmc_event.pbi : index fsl_sdmmc_event.xcl
+build fsl_sdmmc_host.pbi : index fsl_sdmmc_host.xcl
+build fsl_sd.pbi : index fsl_sd.xcl
+build fsl_sdmmc_common.pbi : index fsl_sdmmc_common.xcl
+build fsl_soundcard.pbi : index fsl_soundcard.xcl
+build audio.pbi : index audio.xcl
+build equalizer.pbi : index equalizer.xcl
+build main.pbi : index main.xcl
+build terminal_menu.pbi : index terminal_menu.xcl
+build startup.pbi : index startup.xcl
+build system_MK64F12.pbi : index system_MK64F12.xcl
+build fsl_debug_console.pbi : index fsl_debug_console.xcl
+build sai_demo_part0.pbi : link gpio_pins.pbi hardware_init.pbi pin_mux.pbi fsl_wm8960_driver.pbi diskio.pbi
+build sai_demo_part1.pbi : link ff.pbi ffsystem.pbi ffunicode.pbi fsl_sd_disk.pbi fsl_edma_irq.pbi
+build sai_demo_part2.pbi : link fsl_i2c_irq.pbi fsl_sai_irq.pbi fsl_sdmmc_event.pbi fsl_sdmmc_host.pbi fsl_sd.pbi
+build sai_demo_part3.pbi : link fsl_sdmmc_common.pbi fsl_soundcard.pbi audio.pbi equalizer.pbi main.pbi
+build sai_demo_part4.pbi : link terminal_menu.pbi startup.pbi system_MK64F12.pbi fsl_debug_console.pbi
+build sai_demo.pbd : link sai_demo_part0.pbi sai_demo_part1.pbi sai_demo_part2.pbi sai_demo_part3.pbi sai_demo_part4.pbi
+build sai_demo.pbw : browsedata sai_demo.pbd
+
+

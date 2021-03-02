@@ -1,0 +1,8 @@
+#undef  MQXCFG_ENABLE_FP
+#define MQXCFG_ENABLE_FP                0
+
+#undef  MQX_INCLUDE_FLOATING_POINT_IO
+#define MQX_INCLUDE_FLOATING_POINT_IO   0
+
+#undef  NEED_STRTOD
+#define NEED_STRTOD                     1

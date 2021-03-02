@@ -1,0 +1,60 @@
+#undef  BSPCFG_ENABLE_FLASHX
+#define BSPCFG_ENABLE_FLASHX  1
+
+/* disable all componenst to save space for intram targets */
+#undef  MQX_USE_EVENTS
+#define MQX_USE_EVENTS        0
+#undef  MQX_USE_LWEVENTS
+#define MQX_USE_LWEVENTS      0
+#undef  MQX_USE_LOGS
+#define MQX_USE_LOGS          0
+#undef  MQX_USE_LWLOGS
+#define MQX_USE_LWLOGS        0
+#undef  MQX_USE_MESSAGES
+#define MQX_USE_MESSAGES      0
+#undef  MQX_USE_LWMSGQ
+#define MQX_USE_LWMSGQ        0
+#undef  MQX_USE_SEMAPHORES
+#define MQX_USE_SEMAPHORES    0
+#undef  MQX_USE_MUTEXES
+#define MQX_USE_MUTEXES       0
+#undef  MQX_USE_NAME
+#define MQX_USE_NAME          0
+#undef  MQX_USE_PARTITIONS
+#define MQX_USE_PARTITIONS    0
+#undef  MQX_USE_TIMER
+#define MQX_USE_TIMER         0
+#undef  MQX_USE_LWTIMER
+#define MQX_USE_LWTIMER       0
+#undef  MQX_USE_SW_WATCHDOGS
+#define MQX_USE_SW_WATCHDOGS  0
+
+/* disable unused drivers to save space for intram targets */
+#undef  BSPCFG_ENABLE_ESDHC
+#define BSPCFG_ENABLE_ESDHC     0
+#undef  BSPCFG_ENABLE_SAI
+#define BSPCFG_ENABLE_SAI       0
+#undef  BSPCFG_ENABLE_ADC0
+#define BSPCFG_ENABLE_ADC0      0
+#undef  BSPCFG_ENABLE_ADC1
+#define BSPCFG_ENABLE_ADC1      0
+#undef  BSPCFG_ENABLE_ADC2
+#define BSPCFG_ENABLE_ADC2      0
+#undef  BSPCFG_ENABLE_ADC3
+#define BSPCFG_ENABLE_ADC3      0
+#undef  BSPCFG_ENABLE_RTCDEV
+#define BSPCFG_ENABLE_RTCDEV    0
+#undef  BSPCFG_ENABLE_I2C0
+#define BSPCFG_ENABLE_I2C0      0
+#undef  BSPCFG_ENABLE_II2C0
+#define BSPCFG_ENABLE_II2C0     0
+#undef  BSPCFG_ENABLE_I2C1
+#define BSPCFG_ENABLE_I2C1      0
+#undef  BSPCFG_ENABLE_II2C1
+#define BSPCFG_ENABLE_II2C1     0
+#undef  BSPCFG_ENABLE_SPI0
+#define BSPCFG_ENABLE_SPI0      0
+#undef  BSPCFG_ENABLE_SPI1
+#define BSPCFG_ENABLE_SPI1      0
+#undef  BSPCFG_ENABLE_SPI2
+#define BSPCFG_ENABLE_SPI2      0

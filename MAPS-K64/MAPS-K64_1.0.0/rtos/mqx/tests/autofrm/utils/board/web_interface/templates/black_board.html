@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% load extras %}
+
+{% block title %}BlackBoard results page{% endblock %}
+
+{% block head %}
+    <meta http-equiv="refresh" content="60">
+    <style>
+        body { background-color: black; }
+        td.info { font-family: arial;
+                  font-size: 0.8em;
+                  color: white;
+                  background-color: black
+                }
+        td.ok { background-color: green }
+        td.fail { background-color: red }
+        td.miss { background-color: orange }
+        td.notapp { background-color: black }
+        th.reptableheader { background-color: black }
+    </style>
+{% endblock %}
+
+{% block content %}
+
+{% if headers|length == 0 %}
+    <h1 align="center" style="color:red">No Results found for: {{ timestamp|full_date }}</h1>
+{% else %}
+<table align="center">
+    <tr>
+        {% for header in top_header %}
+            <th class="reptableheader"><img src="/static/pics/{{ header }}.png"></th>
+        {% endfor %}
+        {% for header in headers %}
+            <th class="reptableheader"><img src="/static/pics/{{ header }}.png"></th>
+        {% endfor %}
+    </tr>
+    {% for platform in results %}
+        {% for compiler in results|key:platform %}
+            {% for config in results|key:platform|key:compiler %}
+                <tr>
+                    <td class="info">{{ platform }}</td>
+                    <td class="info">{{ compiler }}</td>
+                    <td class="info">{{ config|capfirst }}</td>
+                    {% with modules=results|key:platform|key:compiler|key:config %}
+                    {% for header in headers %}
+                        {% if header not in modules %}
+                            <td class="notapp"
+                                onMouseOver="HandleMoveOn('<b>Test is not applicable</b><br>{{ header}}<br>{{ platform }}<br>{{ compiler }}');"
+                                onMouseOut="HandleMoveOff();"> </td>
+                        {% else %}
+                            {% with total=results|key:platform|key:compiler|key:config|key:header|key:"test" %}
+                            {% with fail=results|key:platform|key:compiler|key:config|key:header|key:"failures" %}
+                            {% with miss=results|key:platform|key:compiler|key:config|key:header|key:"missing" %}
+                            <td class={% if miss > 0 %} "miss"
+                                {% elif fail > 0 %} "fail"
+                                {% else %} "ok"
+                                {% endif %}
+                                onMouseOver="HandleMoveOn('{{ platform }}<br>{{ compiler }}<br>{{ config }}<br> \
+                                            {{ header }}<br>{{ total }}/{{ fail }} \
+                                            {% if miss > 0 %}<br><b>{{ miss }} part{{ miss|pluralize }} of report {{ miss|pluralize:"is,are" }} missing</b>{% endif %}');"
+                                onMouseOut="HandleMoveOff();">
+                            </td>
+                            {% endwith %}{% endwith %}{% endwith %}
+                        {% endif %}
+                    {% endfor %}
+                    {% endwith%}
+                </tr>
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+</table>
+{% endif %}
+<br>
+
+{% endblock content %}
+
+{% block history %}
+    {% with target='board' time_items=runs time_select=timestamp branch_items=branches branch_select=branch%}
+        {{ block.super }}
+    {% endwith %}
+{% endblock history %}
+
+

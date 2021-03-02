@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% load extras %}
+
+{% block title %}VectorCAST report page{% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+
+<h2 align="center">VectorCAST code coverage reports</h2>
+{% if branch == None %}
+    <h1 align="center" style="color:red">No Results found for: {{ timestamp|full_date }}</h1>
+{% else %}
+<table align="center" border=3>
+    <tr>
+        {% for header in top_header %}
+            <th class="reptableheader">{{ header|split:'.'|first }}</th>
+        {% endfor %}
+    </tr>
+    {% for platform in results %}
+        {% for compiler in results|key:platform %}
+            {% for config in results|key:platform|key:compiler %}
+                {% for alt_config in results|key:platform|key:compiler|key:config %}
+                    <tr>
+                        {% for header in top_header %}
+                            {% if header == 'Platform' %}<td class="info">{{ platform }}</td>
+                            {% elif header == 'Compiler' %}<td class="info">{{ compiler|upper }}</td>
+                            {% elif header == 'Config' %}<td class="info">{{ config }}</td>
+                            {% elif header == 'Alt_config' %}<td class="info">{{ alt_config }}</td>
+                            {% else %}
+
+                            {% with dir_path=results|key:platform|key:compiler|key:config|key:alt_config %}
+                            <td class="result"  onMouseOver="HandleMoveOn('{{ platform }}<br>{{ compiler }}<br>{{ config }}<br>{{ alt_config }}')"
+                            onMouseOut="HandleMoveOff();">
+                            <a href='{% url vcast.views.download path=dir_path|add:"\\"|add:header|encodeBase64 %}' target="_blank">{{ header|split:'.'|last }}</a>
+                            </td>
+                            {% endwith %}
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+</table>
+{% endif %}
+<br>
+
+{% endblock content %}
+
+
+{% block history %}
+    {% with target='vcast' time_items=runs time_select=timestamp branch_items=branches branch_select=branch %}
+        {{ block.super }}
+    {% endwith %}
+{% endblock history %}
+
+
